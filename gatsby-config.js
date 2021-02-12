@@ -1,5 +1,5 @@
 module.exports = {
-    siteMedadata: {
+    siteMetadata: {
         title: "Computing Society",
         decription: "",
         author: "jcsawyer123",
