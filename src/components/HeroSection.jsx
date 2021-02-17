@@ -1,14 +1,17 @@
 import * as React from "react"
 
+// Import Section definition
+
+import Section from "./Section"
 
 const HeroSection = (props) => {
     return (
-        <div className="hero">
+        <Section className="hero" height="full">
             <h1>{props.name}</h1>
             <p>{props.tag}</p>
-        </div>
+        </Section>
     )
   }
   
-  export default IndexPage
+  export default HeroSection
   

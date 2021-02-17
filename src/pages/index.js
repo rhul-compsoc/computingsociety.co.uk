@@ -1,5 +1,5 @@
 import * as React from "react"
-import "../assets/index"
+// import "../assets/index"
 
 // ==============
 // COMPONENTS
@@ -87,8 +87,10 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <HeroSection name="Computing Society" tag="This is a website"></HeroSection>
-    
+      <HeroSection 
+        name="Computing Society" 
+        tag="This is a website">
+      </HeroSection>
     </main>
   )
 }
