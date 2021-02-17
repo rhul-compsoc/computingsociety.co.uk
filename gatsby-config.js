@@ -8,6 +8,6 @@ module.exports = {
         siteUrl: "https://www.computingsociety.co.uk"
     },
     plugins: [
-
+        `gatsby-plugin-sass`
     ]
 }
