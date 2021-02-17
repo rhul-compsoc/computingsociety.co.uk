@@ -1,7 +1,7 @@
 import React from "react"
 import renderer from "react-test-renderer"
 
-import HeroSection from "../HeroSection"
+import HeroSection from "../components/HeroSection"
 
 
 // Using SnapShot testing
