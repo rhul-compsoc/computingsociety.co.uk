@@ -3,8 +3,8 @@ import '../../assets/scss/init.scss'
 
 
 // Load Components
-import {Header} from '../Header'
-import {Footer} from '../Footer'
+import Header from '../Header'
+import Footer from '../Footer'
 
 
 // Stylesss
@@ -14,14 +14,14 @@ import styles from "./Layout.module.scss"
 const Layout = (props) => {
       return (
         <div>
-            <div className={styles.layout}>
+            <div>
                 <Header />
-                <main className={styles.content}>{this.props.children}</main>
+                {/* <main>{props.children}</main> */}
                 <Footer />
             </div>
         </div>
     )
   }
   
-  export default Layout
+export default Layout
   

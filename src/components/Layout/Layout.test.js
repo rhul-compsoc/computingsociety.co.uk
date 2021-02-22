@@ -14,7 +14,7 @@ describe("Layout", () => {
         const tree = renderer
     
         // Crate the component
-        .create(<Layout/>)
+        .create(<Layout />)
         .toJSON() // Convert to JSON
 
         // Check if it matches what we expect by checking a snapshot from the past
