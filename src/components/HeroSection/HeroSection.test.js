@@ -1,7 +1,7 @@
 import React from "react"
 import renderer from "react-test-renderer"
 
-import HeroSection from "../components/HeroSection"
+import HeroSection from "./HeroSection"
 
 
 // Using SnapShot testing
@@ -12,7 +12,7 @@ describe("HeroSection", () => {
     // What we are testing
     it("renders correct", () => {
         const tree = renderer
-        
+    
         // Crate the component
         .create(<HeroSection
                 name="Hero Name"
@@ -20,9 +20,9 @@ describe("HeroSection", () => {
             />)
         .toJSON() // Convert to JSON
 
-    // Check if it matches what we expect by checking a snapshot from the past
-    // https://jestjs.io/docs/en/snapshot-testing
-    expect(tree).toMatchSnapshot()
+        // Check if it matches what we expect by checking a snapshot from the past
+        // https://jestjs.io/docs/en/snapshot-testing
+        expect(tree).toMatchSnapshot()
     })
 
 })

@@ -1,8 +1,9 @@
 import * as React from "react"
+import styles from "./HeroSection.module.scss"
 
 // Import Section definition
 
-import Section from "./Section"
+import Section from "../Section/Section"
 
 const HeroSection = (props) => {
     return (
