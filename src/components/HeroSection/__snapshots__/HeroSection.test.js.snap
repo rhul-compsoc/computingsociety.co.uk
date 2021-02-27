@@ -2,6 +2,13 @@
 
 exports[`HeroSection renders correct 1`] = `
 <div
-  className="  hero section"
-/>
+  className=" full hero section"
+>
+  <h1>
+    Hero Name
+  </h1>
+  <p>
+    Tagline
+  </p>
+</div>
 `;
