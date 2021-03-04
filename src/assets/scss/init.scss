@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+// Load Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
 @import "variables";
 @import "mixins";
 @import "base";
