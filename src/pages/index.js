@@ -107,6 +107,11 @@ const IndexPage = () => {
         </EventSection>
 
 
+        <PastEventSection 
+          name="Past Events" 
+          tag="We have a range of events throughout the year">
+        </PastEventSection>
+
 
     </layout>
 
