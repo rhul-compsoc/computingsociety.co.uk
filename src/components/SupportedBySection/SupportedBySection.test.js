@@ -1,7 +1,7 @@
 import React from "react"
 import renderer from "react-test-renderer"
 
-import SupportedBySection from "./SupportedBySection"
+import SupportedBySection from "./SupportedBySection.test"
 
 
 // Using SnapShot testing
