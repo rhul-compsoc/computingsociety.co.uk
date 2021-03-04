@@ -95,6 +95,13 @@ const IndexPage = () => {
           tag="This is a website">
         </HeroSection>
    
+
+        <MembershipSection 
+          name="Membership" 
+          tag="Our members always come first. We aim to provide great experiences for everyone.">
+        </MembershipSection>
+
+        
     </layout>
 
   )
