@@ -4,8 +4,14 @@ import * as React from "react"
 // ==============
 // COMPONENTS
 // ==============
-import { Layout } from "../components/Layout"
+import Layout from "../components/Layout"
 import HeroSection from "../components/HeroSection"
+import MembershipSection from "../components/MebershipSection"
+import EventSection from "../components/EventSection"
+import PastEventSection from "../components/PastEventSection"
+import TeamSection from "../components/TeamSection"
+import SupportedBySection from "../components/SupportedBySection/SupportedBySection"
+import SponsorSection from "../components/SponsorSection/SponsorSection"
 
 // ==============
 // STYLES
@@ -88,13 +94,12 @@ const links = [
 const IndexPage = () => {
   return (
 
-    <layout>
+    <Layout>
 
         <HeroSection 
           name="Computing Society" 
           tag="This is a website">
         </HeroSection>
-   
 
         <MembershipSection 
           name="Membership" 
@@ -116,7 +121,16 @@ const IndexPage = () => {
           tag="This is all possible thanks to our hard working committee!">
         </TeamSection>
 
-    </layout>
+        <SupportedBySection 
+          name="Supported By" 
+          tag="All of what we do is generously supported by our partners in industry.">
+        </SupportedBySection>
+
+        <SponsorSection>
+          
+        </SponsorSection>
+
+    </Layout>
 
   )
 }
