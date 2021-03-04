@@ -4,6 +4,7 @@ import * as React from "react"
 // ==============
 // COMPONENTS
 // ==============
+import { Layout } from "../components/Layout"
 import HeroSection from "../components/HeroSection"
 
 // ==============
@@ -86,12 +87,16 @@ const links = [
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <HeroSection 
-        name="Computing Society" 
-        tag="This is a website">
-      </HeroSection>
-    </main>
+
+    <layout>
+
+        <HeroSection 
+          name="Computing Society" 
+          tag="This is a website">
+        </HeroSection>
+   
+    </layout>
+
   )
 }
 
