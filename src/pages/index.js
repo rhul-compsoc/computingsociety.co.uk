@@ -106,12 +106,15 @@ const IndexPage = () => {
           tag="These are our upcoming events">
         </EventSection>
 
-
         <PastEventSection 
           name="Past Events" 
           tag="We have a range of events throughout the year">
         </PastEventSection>
 
+        <TeamSection 
+          name="The Team" 
+          tag="This is all possible thanks to our hard working committee!">
+        </TeamSection>
 
     </layout>
 
