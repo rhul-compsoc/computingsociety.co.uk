@@ -101,7 +101,13 @@ const IndexPage = () => {
           tag="Our members always come first. We aim to provide great experiences for everyone.">
         </MembershipSection>
 
-        
+        <EventSection 
+          name="Events" 
+          tag="These are our upcoming events">
+        </EventSection>
+
+
+
     </layout>
 
   )
