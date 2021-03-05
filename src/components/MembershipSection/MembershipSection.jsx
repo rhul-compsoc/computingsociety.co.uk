@@ -7,9 +7,9 @@ import Section from "../Section/Section"
 
 const MembershipSection = (props) => {
     return (
-        <Section className="membership" height="half">
-            <h1>{props.name}</h1>
-            <p>{props.tag}</p>
+        <Section className="membership" height="half" theme="dark">
+            <h2>{props.name}</h2>
+            <h3 class="section-tag">{props.tag}</h3>
         </Section>
     )
   }

@@ -7,9 +7,9 @@ import Section from "../Section/Section"
 
 const PastEventSection = (props) => {
     return (
-        <Section className="PastEvents" height="full">
-            <h1>{props.name}</h1>
-            <p>{props.tag}</p>
+        <Section className="PastEvents" height="full" theme="dark">
+            <h2>{props.name}</h2>
+            <h3 class="section-tag">{props.tag}</h3>
         </Section>
     )
   }

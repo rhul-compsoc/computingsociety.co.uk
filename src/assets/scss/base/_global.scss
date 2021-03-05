@@ -4,3 +4,41 @@
 html {
     font-size: $root-font-size;
 }
+
+
+
+// Section Rules
+section{
+    padding: 3rem;
+    background-color: $color-bg-main;
+    min-height: 20vh;
+    font-family: $font-family;
+
+    &.full {
+        min-height: 66vh;
+    }
+
+    &.half {
+        min-height: 33vh;
+    }
+
+    &.dark {
+        background-color: $color-bg-alt;
+    }
+
+
+    h2{
+        font-size: $heading-font-size;
+        color: $color-text-heading;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h3{
+        font-size: $detail-font-size;
+        color: $color-text-main;
+        font-weight: bold;
+        margin-right: 40%;
+
+    }
+}

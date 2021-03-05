@@ -8,8 +8,13 @@ import Section from "../Section/Section"
 const HeroSection = (props) => {
     return (
         <Section className="hero" height="full">
-            <h1>{props.name}</h1>
-            <p>{props.tag}</p>
+            <div className="row justify-content-center">
+                <div className="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <h1>Royal Holloway<br />Computing Society</h1>
+                </div>
+            </div>
+
+
         </Section>
     )
   }

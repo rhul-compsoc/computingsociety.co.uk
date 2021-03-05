@@ -7,7 +7,7 @@ import Section from "../Section/Section"
 
 const SponsorSection = (props) => {
     return (
-        <Section className="sponsors" height="half">
+        <Section className={styles.sponsors} height="half" >
         </Section>
     )
   }

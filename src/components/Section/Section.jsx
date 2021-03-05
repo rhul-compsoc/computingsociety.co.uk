@@ -32,13 +32,15 @@ const Section = (props) => {
     // THEME: The theme
     // HEIGHT: The height
     // Props.classes: Any classes that are inherited
-    let classes = `${theme} ${height} ${props.className} section`
+    let classes = `${theme} ${height} ${props.className}`
 
     // props.children gets the contents of any composite component. E.g HeroSection
     return (
-        <div className={classes}>
-            {props.children} 
-        </div>
+        <section className={classes}>
+            <div className="container">
+                {props.children} 
+            </div>
+        </section>
     )
   }
   

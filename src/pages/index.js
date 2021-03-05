@@ -10,6 +10,7 @@ import MembershipSection from "../components/MembershipSection"
 import EventSection from "../components/EventSection"
 import PastEventSection from "../components/PastEventSection"
 import TeamSection from "../components/TeamSection"
+import WhatWeDoSection from "../components/WhatWeDoSection"
 import SupportedBySection from "../components/SupportedBySection/SupportedBySection"
 import SponsorSection from "../components/SponsorSection/SponsorSection"
 
@@ -56,6 +57,11 @@ const IndexPage = () => {
           name="Past Events" 
           tag="We have a range of events throughout the year">
         </PastEventSection>
+
+        <WhatWeDoSection   
+          name="What We Do" 
+          tag="We are here to provide a range of activities and support.">
+        </WhatWeDoSection>
 
         <TeamSection 
           name="The Team" 
