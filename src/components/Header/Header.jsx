@@ -28,7 +28,7 @@ const Header = (props) => {
         </Navbar.Brand>      <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Homse</Nav.Link>
+            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Events</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link>
             <Nav.Link href="#link">Our Team</Nav.Link>
