@@ -1,3 +1,4 @@
+import { graphql } from "gatsby"
 import * as React from "react"
 // import "../assets/index"
 
@@ -15,25 +16,21 @@ import SupportedBySection from "../components/SupportedBySection/SupportedBySect
 import SponsorSection from "../components/SponsorSection/SponsorSection"
 
 
-// ==============
-// DATA
-// ==============
-const links = [
-  {
-    text: "Link",
-    url: "https://www.computingsociety.co.uk",
-    description:
-      "Home link",
-    color: "#E95800",
-  }
-]
-
 
 // ==============
 // SITE MARKUP
 // ==============
 
 const IndexPage = () => {
+
+  // // Load from MD
+  // const { frontmatter } = data.allMdx
+  
+  // // Page Variables
+  // const {
+  //   people
+  // } = frontmatter
+  
   return (
 
     <Layout>
@@ -81,3 +78,20 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+
+{/* export const pageQuery = graphql`
+  query front {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            name
+            title
+            short_description
+          }
+        }
+      }
+    }
+ }
+` */}

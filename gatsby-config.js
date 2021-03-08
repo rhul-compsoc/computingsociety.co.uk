@@ -8,9 +8,9 @@ module.exports = {
         siteUrl: "https://www.computingsociety.co.uk"
     },
     mapping: {
-        "MarkdownRemark.frontmatter.people.person": "MarkdownRemark.fields.id",
-        "MarkdownRemark.frontmatter.pastevents.event": "MarkdownRemark.fields.id",
-        "MarkdownRemark.frontmatter.events.event": "MarkdownRemark.fields.id"
+        "MarkdownRemark.frontmatter.people.person": "MarkdownRemark.fields.name",
+        "MarkdownRemark.frontmatter.pastevents.event": "MarkdownRemark.fields.name",
+        "MarkdownRemark.frontmatter.events.event": "MarkdownRemark.fields.name"
     },
     plugins: [
         {

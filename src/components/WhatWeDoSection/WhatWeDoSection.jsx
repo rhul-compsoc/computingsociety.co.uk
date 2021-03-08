@@ -10,7 +10,7 @@ import Section from "../Section/Section"
 
 const WhatWeDoSection = (props) => {
     return (
-        <Section className="features" height="full">
+        <Section className="WhatWeDo" height="full">
 
             <h2>{props.name}</h2>
             <h3 className="section-tag">{props.tag}</h3>
@@ -18,7 +18,7 @@ const WhatWeDoSection = (props) => {
 
             <div className="container">
                 <div className="row justify-content-center features">
-                    <div className="col-sm-6 col-md-5 col-lg-4 item justify-content-center  d-flex align-items-center">
+                    <div className="col-sm-6 col-md-5 col-lg-4 item">
                         <div className="box ">
                             <FontAwesomeIcon className="icon" icon={faChalkboard} />
                             <h4 className="name">Workshops</h4>
