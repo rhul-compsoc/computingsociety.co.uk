@@ -9,6 +9,30 @@
     padding: 1rem 3rem 1rem 3rem;
     font-size: 1.2rem;
     border-radius: 0px;
+    box-sizing: border-box;
+    border: 5px solid $color-text-heading;
+
+    &:hover{
+        background: white;
+        color: $color-text-heading;
+    }
+}
+
+.btn.btn-outline-red{
+    background: None;
+    color: $color-text-heading;
+    text-transform: lowercase;
+    font-weight: bold;
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    border: 5px solid $color-text-heading;
+    border-radius: 0px;
+
+    &:hover{
+        background: $color-text-heading;
+        color: white;
+    }
 }
 
 .btn.btn-solid-discord{
@@ -19,6 +43,13 @@
     padding: 1rem 3rem 1rem 3rem;
     font-size: 1.2rem;
     border-radius: 0px;
+    box-sizing: border-box;
+    border: 5px solid $discord;
+
+    &:hover{
+        background: white;
+        color: $discord;
+    }
 }
 
 .btn.btn-outline-white{
@@ -29,3 +60,4 @@
     border-radius: 0px;
     border: 5px solid #fff;
 }
+
