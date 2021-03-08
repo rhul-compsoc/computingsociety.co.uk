@@ -67,7 +67,7 @@ const IndexPage = () => {
           name="The Team" 
           tag="This is all possible thanks to our hard working committee!">
         </TeamSection>
-
+    
         <SupportedBySection 
           name="Supported By" 
           tag="All of what we do is generously supported by our partners in industry.">

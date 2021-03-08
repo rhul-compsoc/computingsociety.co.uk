@@ -7,9 +7,11 @@ import styles from "./Footer.module.scss"
 
 const Footer = (props) => {
       return (
-        <div>
-            <p>This is a Footer</p>
+      <footer>
+        <div className="container">
+            <p className="footer-text">made with ❤ in Egham</p>
         </div>
+      </footer>
     )
   }
   
