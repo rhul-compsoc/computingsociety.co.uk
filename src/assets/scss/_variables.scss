@@ -2,14 +2,16 @@
  * Variables
  */
 
+$red: #C32126;
+ 
 // Colors
-$color-text-heading: #C32126;
+$color-text-heading: $red;
 $color-text-main: #000;
 $color-bg-main: #fff;
 $color-bg-alt: #EFEAE3;
 
 // Legacy
-$color-base: $color-text-heading;
+$color-base: $red;
 $color-primary: $color-text-main;
 $color-secondary: $color-text-main;
 

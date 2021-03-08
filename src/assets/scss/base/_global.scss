@@ -6,6 +6,7 @@ html {
     overflow-x: hidden;
 }
 
+
 // Nav-Override
 .navbar{
     color: black;
@@ -72,11 +73,54 @@ section{
     }
 }
 
+
+// What we do
+
+.features {    
+    .features {
+        padding: 50px 0;
+    }
+    
+    .item {
+        text-align: center;
+
+        .box {
+            min-height: 25vh;
+            text-align: center;
+            justify-self: center;
+            padding: 30px;
+            background-color: $color-bg-alt;
+            margin-bottom: 30px;
+        }
+        
+        .icon {
+            font-size: 60px;
+            color: $red;
+            margin-top: 20px;
+            margin-bottom: 35px;
+        }
+        
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+            margin-top: 0;
+            color: inherit;
+        }
+        
+        .description {
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
 // Footer
 footer {
     display: flex;
     justify-content: center;
-    background-color: #2E3338;
+    background-color: $color-bg-alt;
     color: white;
     padding: 1rem;
 
