@@ -12,7 +12,7 @@ const SupportedBySection = (props) => {
             <h3 class="section-tag">{props.tag}</h3>
 
             <p className={styles.details}>Interested in supporting us?</p>
-            <a  className="btn  btn-solid-red"
+            <a  className="btn btn-solid-red"
                 href='#'>Find Out More
             </a>        
         </Section>

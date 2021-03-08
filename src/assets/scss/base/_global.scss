@@ -1,6 +1,4 @@
 // Generics/Global Styles
-
-
 html {
     font-size: $root-font-size;
     overflow-x: hidden;
@@ -120,7 +118,7 @@ section{
 footer {
     display: flex;
     justify-content: center;
-    background-color: $color-bg-alt;
+    background-color: $dark-gray;
     color: white;
     padding: 1rem;
 
@@ -131,20 +129,3 @@ footer {
 }
 
 
-// Buttons
-.btn.btn-solid-red{
-    background: $color-text-heading;
-    color: #fff;
-    text-transform: lowercase;
-    font-weight: bold;
-    border-radius: 0px;
-}
-
-.btn.btn-outline-white{
-    background: #fff;
-    color: #fff;
-    text-transform: lowercase;
-    font-weight: bold;
-    border-radius: 0px;
-    border: 5px solid #fff;
-}
