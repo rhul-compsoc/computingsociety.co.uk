@@ -7,8 +7,30 @@ module.exports = {
         github: "jcsawyer123",
         siteUrl: "https://www.computingsociety.co.uk"
     },
+    mapping: {
+        "MarkdownRemark.frontmatter.people.person": "MarkdownRemark.fields.id",
+        "MarkdownRemark.frontmatter.pastevents.event": "MarkdownRemark.fields.id",
+        "MarkdownRemark.frontmatter.events.event": "MarkdownRemark.fields.id"
+    },
     plugins: [
-        `gatsby-plugin-sass`,
-        `gatsby-plugin-mdx`
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `posts`,
+              path: `${__dirname}/src/posts`,
+            },
+        },
+        {
+            resolve: "gatsby-plugin-sass",
+            options: {
+              sassOptions: {
+                includePaths: ["src/assets/scss"],
+              },
+              implementation: require("sass"),
+            },
+          },
+        "gatsby-transformer-remark",
+        "gatsby-transformer-sharp",
+        "gatsby-plugin-sharp"
     ]
 }
