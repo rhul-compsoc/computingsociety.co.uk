@@ -1,3 +1,4 @@
+import { graphql } from "gatsby"
 import * as React from "react"
 // import "../assets/index"
 
@@ -10,22 +11,10 @@ import MembershipSection from "../components/MembershipSection"
 import EventSection from "../components/EventSection"
 import PastEventSection from "../components/PastEventSection"
 import TeamSection from "../components/TeamSection"
+import WhatWeDoSection from "../components/WhatWeDoSection"
 import SupportedBySection from "../components/SupportedBySection/SupportedBySection"
 import SponsorSection from "../components/SponsorSection/SponsorSection"
 
-
-// ==============
-// DATA
-// ==============
-const links = [
-  {
-    text: "Link",
-    url: "https://www.computingsociety.co.uk",
-    description:
-      "Home link",
-    color: "#E95800",
-  }
-]
 
 
 // ==============
@@ -33,6 +22,15 @@ const links = [
 // ==============
 
 const IndexPage = () => {
+
+  // // Load from MD
+  // const { frontmatter } = data.allMdx
+  
+  // // Page Variables
+  // const {
+  //   people
+  // } = frontmatter
+  
   return (
 
     <Layout>
@@ -57,11 +55,16 @@ const IndexPage = () => {
           tag="We have a range of events throughout the year">
         </PastEventSection>
 
+        <WhatWeDoSection   
+          name="What We Do" 
+          tag="We are here to provide a range of activities and support.">
+        </WhatWeDoSection>
+
         <TeamSection 
           name="The Team" 
           tag="This is all possible thanks to our hard working committee!">
         </TeamSection>
-
+    
         <SupportedBySection 
           name="Supported By" 
           tag="All of what we do is generously supported by our partners in industry.">
@@ -75,3 +78,20 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+
+{/* export const pageQuery = graphql`
+  query front {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            name
+            title
+            short_description
+          }
+        }
+      }
+    }
+ }
+` */}

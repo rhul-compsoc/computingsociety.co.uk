@@ -13,7 +13,7 @@ import Nav from "react-bootstrap/Nav"
 const Navibar = (props) => {
     return (
 
-    <Navbar bg="light" expand="lg">
+    <Navbar fixed="top" sticky="top " bg="compsoc" expand="lg">
       <div className="container">
         <Navbar.Brand href="#home">
           <img

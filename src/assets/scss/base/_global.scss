@@ -1,6 +1,341 @@
 // Generics/Global Styles
-
-
 html {
     font-size: $root-font-size;
+    overflow-x: hidden;
 }
+
+
+//======================================
+// Navbar
+//======================================
+.navbar{
+    color: black;
+    font-weight: bold;
+
+
+    &.navbar-light{
+        color: red;
+    }
+
+    &.bg-compsoc{
+        background-color: white;
+        box-shadow: 0px 10px 15px -1px rgba(0,0,0,0.22);
+        -webkit-box-shadow: 0px 10px 15px -1px rgba(0,0,0,0.22);
+        -moz-box-shadow: 0px 10px 15px -1px rgba(0,0,0,0.22);
+    }
+
+    .navbar-nav{    
+        .nav-link{
+            color: black;
+        
+            &:hover{
+                color:$color-text-heading;
+            }
+
+        }
+        
+    }
+}
+
+//======================================
+// Hero Section
+//======================================
+.hero {
+    // background-image: ;
+    h1{
+        font-size: 72px;
+        font-weight: bold;
+    }
+    .btn-group {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+
+//======================================
+// Section Base Component
+//======================================
+section{
+    padding: 3rem;
+    background-color: $color-bg-main;
+    min-height: 20vh;
+    font-family: $font-family;
+
+    &.full {
+        min-height: 66vh;
+    }
+
+    &.half {
+        min-height: 33vh;
+    }
+
+    &.dark {
+        background-color: $color-bg-alt;
+    }
+
+
+    h2{
+        font-size: $heading-font-size;
+        color: $color-text-heading;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h3{
+        font-size: $detail-font-size;
+        color: $color-text-main;
+        font-weight: bold;
+        margin-right: 40%;
+
+    }
+}
+
+//======================================
+// Current Events
+//======================================
+.Events {   
+    .event {
+        padding: 50px 0;
+        min-height: 30vh;
+    }
+
+    .item {
+        // text-align: center;
+
+        .box {
+            background-color: lighten($color-bg-alt, 4%);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            
+            &:hover {
+                background-color: lighten($color-bg-alt, 5%);
+                box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+                -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+                -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+            }
+
+            // .item-head {
+
+            // }
+            .item-body {
+                .link {
+                    text-align: end;
+                    a {
+                        font-weight: bold;
+                        color: $color-text-heading;  
+                        text-transform: lowercase;
+
+                        &.disabled{
+                            color: lighten($dark-gray, 40%);
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+
+        
+            }
+        }
+        
+        .icon {
+            font-size: 60px;
+            color: $red;
+            margin-top: 20px;
+            margin-bottom: 35px;
+        }
+        
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+            margin-top: 0;
+            color: inherit;
+        }
+        
+        .description {
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+//======================================
+// Past Events
+//======================================
+.PastEvents {   
+    .event {
+        padding: 50px 0;
+        min-height: 30vh;
+    }
+
+    .item {
+        // text-align: center;
+
+        .box {
+            background-color: lighten($color-bg-alt, 4%);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            
+            &:hover {
+                background-color: lighten($color-bg-alt, 5%);
+                box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+                -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+                -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+            }
+
+            // .item-head {
+
+            // }
+            .item-body {
+                .link {
+                    text-align: end;
+                    a {
+                        font-weight: bold;
+                        color: $color-text-heading;
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+        
+        .icon {
+            font-size: 60px;
+            color: $red;
+            margin-top: 20px;
+            margin-bottom: 35px;
+        }
+        
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+            margin-top: 0;
+            color: inherit;
+        }
+        
+        .description {
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+//======================================
+// What We Do
+//======================================
+.WhatWeDo {    
+    .features {
+        padding: 50px 0;
+    }
+    
+    .item {
+        text-align: center;
+
+        .box {
+            min-height: 25vh;
+            text-align: center;
+            justify-self: center;
+            background-color: lighten($color-bg-alt, 4%);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+            
+            &:hover {
+                background-color: lighten($color-bg-alt, 5%);
+                box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+                -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+                -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.4);
+            }
+
+        }
+
+        .icon {
+            font-size: 60px;
+            color: $red;
+            margin-top: 20px;
+            margin-bottom: 35px;
+        }
+        
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+            margin-top: 0;
+            color: inherit;
+        }
+        
+        .description {
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+//======================================
+// Team
+//======================================
+.team {
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 1rem;
+        box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+        -webkit-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+        -moz-box-shadow: 0px 5px 5px -1px rgba(0,0,0,0.22);
+
+
+        .card-content {
+          background-color: white;
+          color: black;
+          padding: 0.5em 0.25em;
+        
+            .name {
+                font-weight: bold;
+            }
+          
+            .description {
+                padding-top: 0;
+            }
+        }
+        
+        .card-picture {
+          .picture {
+            width: 100%;
+          }
+        }
+      }
+      
+}
+//======================================
+// Footer
+//======================================
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: $dark-gray;
+    color: white;
+    padding: 1rem;
+
+    p.footer-text {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+

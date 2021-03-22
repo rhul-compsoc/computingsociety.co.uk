@@ -18,8 +18,6 @@ const Header = (props) => {
 
       <Navibar/>
 
-
-      <p>This is a header</p>
     </header>
 
   )
