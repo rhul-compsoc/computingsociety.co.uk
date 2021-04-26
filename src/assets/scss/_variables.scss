@@ -4,28 +4,29 @@
 
 //
 
-$red: #C32126;
-$discord: #7289DA;
+$red: #c32126;
+$discord: #7289da;
 $dark-gray: rgb(12, 12, 12);
 
 // Colors
 $color-text-heading: $red;
 $color-text-main: #000;
 $color-bg-main: #fff;
-$color-bg-alt: #EFEAE3;
+$color-bg-alt: #efeae3;
 
 // Legacy
 $color-base: $red;
 $color-primary: $color-text-main;
 $color-secondary: $color-text-main;
 
-$color-white: #FFF;
+$color-white: #fff;
 $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
 
 // Font
-$font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-family: Montserrat, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+  Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 // Font Size
 $root-font-size: 100;

@@ -10,7 +10,7 @@ evend_end: 2022-02-06T11:00:00+00
 facebook-link: null
 
 # A long description for the event.
-full-description:
+full-description: |
   Royal Hackaway is Royal Holloway's annual hackathon.
 
   Open to university students from the UK and around the world,

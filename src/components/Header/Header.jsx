@@ -1,26 +1,13 @@
-import * as React from "react"
-
-
+import * as React from "react";
 // Components
-import Navibar from "../Navibar"
-
-// Styles
-import styles from "./Header.module.scss"
-import logoalt from "../../images/logo-inverted.svg"
-import logo from "../../images/logo.svg"
-
-
-
+import Navibar from "../Navibar";
 
 const Header = (props) => {
-    return (
+  return (
     <header>
-
-      <Navibar/>
-
+      <Navibar />
     </header>
+  );
+};
 
-  )
-}
-
-export default Header
+export default Header;

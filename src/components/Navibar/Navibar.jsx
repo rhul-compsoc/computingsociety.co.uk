@@ -1,18 +1,11 @@
-import * as React from "react"
-
-
-// Styles
-import styles from "./Navibar.module.scss"
-import logo from "../../images/logo.svg"
-
-
+import * as React from "react";
+import Nav from "react-bootstrap/Nav";
 // Load components from React-Bootstrap
-import Navbar from "react-bootstrap/Navbar"
-import Nav from "react-bootstrap/Nav"
+import Navbar from "react-bootstrap/Navbar";
+import logo from "../../images/logo.svg";
 
 const Navibar = (props) => {
-    return (
-
+  return (
     <Navbar fixed="top" sticky="top " bg="compsoc" expand="lg">
       <div className="container">
         <Navbar.Brand href="#home">
@@ -23,7 +16,8 @@ const Navibar = (props) => {
             className="d-inline-block align-top"
             alt="Computing Society"
           />
-        </Navbar.Brand>      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        </Navbar.Brand>{" "}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -35,8 +29,7 @@ const Navibar = (props) => {
         </Navbar.Collapse>
       </div>
     </Navbar>
+  );
+};
 
-  )
-}
-
-export default Navibar
+export default Navibar;

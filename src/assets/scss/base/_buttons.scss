@@ -1,63 +1,62 @@
 // Buttons
 // @todo: refactor these into mixin / components
 
-.btn.btn-solid-red{
-    background: $color-text-heading;
-    color: #fff;
-    text-transform: lowercase;
-    font-weight: bold;
-    padding: 1rem 3rem 1rem 3rem;
-    font-size: 1.2rem;
-    border-radius: 0px;
-    box-sizing: border-box;
-    border: 5px solid $color-text-heading;
+.btn.btn-solid-red {
+  background: $color-text-heading;
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: bold;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 0px;
+  box-sizing: border-box;
+  border: 5px solid $color-text-heading;
 
-    &:hover{
-        background: white;
-        color: $color-text-heading;
-    }
-}
-
-.btn.btn-outline-red{
-    background: None;
+  &:hover {
+    background: white;
     color: $color-text-heading;
-    text-transform: lowercase;
-    font-weight: bold;
-    padding: 1rem 3rem 1rem 3rem;
-    font-size: 1.2rem;
-    box-sizing: border-box;
-    border: 5px solid $color-text-heading;
-    border-radius: 0px;
-
-    &:hover{
-        background: $color-text-heading;
-        color: white;
-    }
+  }
 }
 
-.btn.btn-solid-discord{
-    background: $discord;
-    color: #fff;
-    text-transform: lowercase;
-    font-weight: bold;
-    padding: 1rem 3rem 1rem 3rem;
-    font-size: 1.2rem;
-    border-radius: 0px;
-    box-sizing: border-box;
-    border: 5px solid $discord;
+.btn.btn-outline-red {
+  background: None;
+  color: $color-text-heading;
+  text-transform: lowercase;
+  font-weight: bold;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  border: 5px solid $color-text-heading;
+  border-radius: 0px;
 
-    &:hover{
-        background: white;
-        color: $discord;
-    }
+  &:hover {
+    background: $color-text-heading;
+    color: white;
+  }
 }
 
-.btn.btn-outline-white{
-    background: #fff;
-    color: #fff;
-    text-transform: lowercase;
-    font-weight: bold;
-    border-radius: 0px;
-    border: 5px solid #fff;
+.btn.btn-solid-discord {
+  background: $discord;
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: bold;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 0px;
+  box-sizing: border-box;
+  border: 5px solid $discord;
+
+  &:hover {
+    background: white;
+    color: $discord;
+  }
 }
 
+.btn.btn-outline-white {
+  background: #fff;
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: bold;
+  border-radius: 0px;
+  border: 5px solid #fff;
+}
