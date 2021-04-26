@@ -1,13 +1,15 @@
 ---
-name: Past Event 1
-shortname: Past Event 1
-subtitle:
+name: hackaway v5
+shortname: hackaway v5
+subtitle: null
 show: true
+render: true
 
+event_completed: false
 event_start: 2022-02-05T11:00:00+00
 evend_end: 2022-02-06T11:00:00+00
 
-facebook-link: null
+facebook_link: null
 
 # A long description for the event.
 full-description: |
@@ -20,4 +22,6 @@ full-description: |
 
   This is our fifth time running this event, and we're excited to
   create a more inclusive and rewarding event for all.
+
+image: null
 ---

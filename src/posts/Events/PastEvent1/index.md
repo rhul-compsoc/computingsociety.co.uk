@@ -1,9 +1,9 @@
 ---
-name: Past Event 3
-shortname: Past Event 3
+name: Past Event 1
+shortname: Past Event 1
 subtitle: Lorem ipsum
 show: true
-render: false
+render: true
 
 event_completed: true
 event_start: 2022-02-05T11:00:00+00
@@ -15,5 +15,5 @@ facebook_link: null
 full-description: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-image: ./jcsawyer123.jpg
+image: null
 ---

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navibar renders correct 1`] = `
+<nav
+  className="navbar navbar-expand-lg navbar-light bg-compsoc sticky-top  fixed-top"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="navbar-brand"
+      href="#home"
+    >
+      <img
+        alt="Computing Society"
+        className="d-inline-block align-top"
+        height="30"
+        src="test-file-stub"
+        width="120"
+      />
+    </a>
+     
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="basic-navbar-nav"
+    >
+      <div
+        className="ms-auto navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          className="nav-link"
+          data-rb-event-key="#home"
+          href="#home"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Home
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="#link"
+          href="#link"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Events
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="#link"
+          href="#link"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          About
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="#link"
+          href="#link"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Our Team
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key="#link"
+          href="#link"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Sponsors
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
