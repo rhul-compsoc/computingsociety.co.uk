@@ -8,9 +8,9 @@ module.exports = {
     siteUrl: "https://www.computingsociety.co.uk",
   },
   mapping: {
-    "MarkdownRemark.frontmatter.people.person": "MarkdownRemark.fields.name",
-    "MarkdownRemark.frontmatter.pastevents.event": "MarkdownRemark.fields.name",
-    "MarkdownRemark.frontmatter.events.event": "MarkdownRemark.fields.name",
+    "Mdx.frontmatter.people.id": "Mdx.fields.id",
+    // "MarkdownRemark.frontmatter.pastevents.event": "MarkdownRemark.fields.name",
+    // "MarkdownRemark.frontmatter.events.event": "MarkdownRemark.fields.name",
   },
   plugins: [
     {
@@ -29,8 +29,8 @@ module.exports = {
         implementation: require("sass"),
       },
     },
-    "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
   ],
 };

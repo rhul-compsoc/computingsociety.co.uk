@@ -7,7 +7,6 @@ import HeroSection from "../components/HeroSection";
 // ==============
 import Layout from "../components/Layout";
 import MembershipSection from "../components/MembershipSection";
-import PastEventSection from "../components/PastEventSection";
 import SponsorSection from "../components/SponsorSection/SponsorSection";
 import SupportedBySection from "../components/SupportedBySection/SupportedBySection";
 import TeamSection from "../components/TeamSection";
@@ -41,12 +40,14 @@ const IndexPage = () => {
       <EventSection
         name="Events"
         tag="These are our upcoming events"
+        completed={false}
       ></EventSection>
 
-      <PastEventSection
+      <EventSection
         name="Past Events"
         tag="We have a range of events throughout the year"
-      ></PastEventSection>
+        completed={true}
+      ></EventSection>
 
       <WhatWeDoSection
         name="What We Do"

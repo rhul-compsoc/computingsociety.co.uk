@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from 'gatsby'
 import Nav from "react-bootstrap/Nav";
 // Load components from React-Bootstrap
 import Navbar from "react-bootstrap/Navbar";
@@ -8,7 +9,7 @@ const Navibar = (props) => {
   return (
     <Navbar fixed="top" sticky="top " bg="compsoc" expand="lg">
       <div className="container">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/">
           <img
             src={logo}
             width="120"
@@ -20,11 +21,11 @@ const Navibar = (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Events</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
-            <Nav.Link href="#link">Our Team</Nav.Link>
-            <Nav.Link href="#link">Sponsors</Nav.Link>
+            <Nav.Link as={Link} to="/#home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/#link">Events</Nav.Link>
+            <Nav.Link as={Link} to="/#link">About</Nav.Link>
+            <Nav.Link as={Link} to="/#team_section">Our Team</Nav.Link>
+            <Nav.Link as={Link} to="/#link">Sponsors</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>

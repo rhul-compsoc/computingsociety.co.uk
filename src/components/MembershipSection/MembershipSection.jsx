@@ -6,7 +6,7 @@ const MembershipSection = (props) => {
   return (
     <Section className="membership" height="half" theme="dark">
       <h2>{props.name}</h2>
-      <h3 class="section-tag">{props.tag}</h3>
+      <h3 className="section-tag">{props.tag}</h3>
 
       <div className="btn-group pt-3">
         <a className="btn btn-solid-red m-2" href="#">

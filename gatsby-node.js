@@ -32,7 +32,7 @@ const getTemplate = templateName => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type == "MarkdownRemark") {
+  if (node.internal.type == "Mdx") {
     const parent = getNode(node.parent)
     const directoryParts = parent.relativeDirectory.split(/[\\/]/)
 
@@ -69,7 +69,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(
+      allMdx(
         sort: { order: DESC, fields: [frontmatter___event_start] }
       ) {
         edges {
@@ -91,7 +91,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
       return
     }
 
-    result.data.allMarkdownRemark.edges
+    result.data.allMdx.edges
       .filter(
         // Filter out edges where rendering is not enabled
         ({ node }) => node.frontmatter.render

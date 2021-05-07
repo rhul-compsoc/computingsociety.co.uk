@@ -1,2 +1,9 @@
 @import "../../assets/scss/variables";
 @import "../../assets/scss/mixins";
+
+.layout {
+  // Stickify the footer to the bottom!
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}

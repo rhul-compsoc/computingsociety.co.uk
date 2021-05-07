@@ -9,7 +9,7 @@ const EventSection = (props) => {
   return (
     <Section className="events" height="full">
       <h2>{props.name}</h2>
-      <h3 class="section-tag">{props.tag}</h3>
+      <h3 className="section-tag">{props.tag}</h3>
     </Section>
   );
 };
