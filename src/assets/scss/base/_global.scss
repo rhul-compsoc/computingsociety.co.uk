@@ -52,7 +52,7 @@ html {
 // Section Base Component
 //======================================
 section {
-  padding: 3rem;
+  padding: 3rem 0;
   background-color: $color-bg-main;
   min-height: 20vh;
   font-family: $font-family;
@@ -81,6 +81,22 @@ section {
     color: $color-text-main;
     font-weight: bold;
     margin-right: 40%;
+  }
+
+  .link {
+    &, a, span {
+      cursor: pointer;
+      display: inline-block;
+      font-weight: bold;
+      text-decoration: underline;
+      color: $color-text-heading;
+      text-transform: lowercase;
+
+      &.disabled {
+        color: lighten($dark-gray, 40%);
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -122,21 +138,7 @@ section {
           flex-wrap: wrap;
           justify-content: right;
         }
-        
-        .link {
-          display: block;
-          a {
-            display: block;
-            font-weight: bold;
-            color: $color-text-heading;
-            text-transform: lowercase;
-
-            &.disabled {
-              color: lighten($dark-gray, 40%);
-              text-decoration: none;
-            }
-          }
-        }
+      
       }
     }
 

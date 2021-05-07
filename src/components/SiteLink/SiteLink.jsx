@@ -1,0 +1,20 @@
+import * as React from "react";
+
+const SiteLink = ({ href, onClick, children }) => {
+  if (href && onClick)
+    throw new Error(
+      'You cannot use both the "href" and "onClick" functionality simultaneously.'
+    );
+
+  if (href) {
+    return <a className="link">{children}</a>;
+  }
+
+  return (
+    <span onClick={onClick} onKeyDown={onClick} className="link">
+      {children}
+    </span>
+  );
+};
+
+export default SiteLink;
