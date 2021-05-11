@@ -1,3 +1,5 @@
+@import "mixins/breakpoints";
+
 // Generics/Global Styles
 html {
   font-size: $root-font-size;
@@ -39,8 +41,12 @@ html {
 .hero {
   // background-image: ;
   h1 {
-    font-size: 72px;
+    font-size: calc((75vw - 4.5rem) / 7);
     font-weight: bold;
+
+    @include breakpoint-sm {
+      font-size: 72px;
+    }
   }
   .btn-group {
     margin-top: 2rem;
@@ -80,7 +86,10 @@ section {
     font-size: $detail-font-size;
     color: $color-text-main;
     font-weight: bold;
-    margin-right: 40%;
+
+    @include breakpoint-sm {
+      margin-right: 40%;
+    }
   }
 
   .link {
