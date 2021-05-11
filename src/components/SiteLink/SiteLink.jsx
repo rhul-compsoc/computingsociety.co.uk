@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 const SiteLink = ({ href, onClick, children }) => {
   if (href && onClick)
@@ -7,7 +7,7 @@ const SiteLink = ({ href, onClick, children }) => {
     );
 
   if (href) {
-    return <a className="link">{children}</a>;
+    return <a href={href} className="link">{children}</a>;
   }
 
   return (
