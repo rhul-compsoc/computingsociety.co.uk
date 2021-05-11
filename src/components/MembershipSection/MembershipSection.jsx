@@ -1,6 +1,7 @@
-import * as React from "react";
+import React from "react";
 // Import Section definition
 import Section from "../Section/Section";
+import SiteButton from "../SiteButton";
 
 const MembershipSection = (props) => {
   return (
@@ -9,13 +10,13 @@ const MembershipSection = (props) => {
       <h3 className="section-tag">{props.tag}</h3>
 
       <div className="btn-group pt-3">
-        <a className="btn btn-solid-red m-2" href="#">
+        <SiteButton className="btn btn-solid-red m-2" href="#">
           get membership
-        </a>
+        </SiteButton>
 
-        <a className="btn btn-solid-discord m-2" href="#">
+        <SiteButton className="btn btn-solid-discord m-2" href="#">
           Join discord
-        </a>
+        </SiteButton>
       </div>
     </Section>
   );

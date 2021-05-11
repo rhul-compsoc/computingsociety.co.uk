@@ -72,9 +72,9 @@ const EventSection = ({
                           {node.frontmatter.full_description}
                         </p>
                         {node.frontmatter.links.length > 0 && (
-                          <div class="links">
+                          <div className="links">
                             {node.frontmatter.links.map((link) => (
-                              <SiteLink href={link.href} key={link.href}>
+                              <SiteLink href={link.href} key={link.label}>
                                 {link.label}
                               </SiteLink>
                             ))}

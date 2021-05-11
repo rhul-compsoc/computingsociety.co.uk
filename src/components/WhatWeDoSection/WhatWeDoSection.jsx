@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 // Loading Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as React from "react";
+import React from "react";
 // Import Section definition
 import Section from "../Section/Section";
 

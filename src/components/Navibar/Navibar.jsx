@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Link } from 'gatsby'
 import Nav from "react-bootstrap/Nav";
 // Load components from React-Bootstrap

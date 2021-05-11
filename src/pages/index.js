@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import EventSection from "../components/EventSection";
 import HeroSection from "../components/HeroSection";
 // import "../assets/index"
@@ -64,7 +64,7 @@ const IndexPage = () => {
         tag="All of what we do is generously supported by our partners in industry."
       ></SupportedBySection>
 
-      <SponsorSection />
+      {/* <SponsorSection /> */}
     </Layout>
   );
 };

@@ -1,6 +1,7 @@
-import * as React from "react";
+import React from "react";
 // Import Section definition
 import Section from "../Section/Section";
+import SiteButton from "../SiteButton";
 import styles from "./SupportedBySection.module.scss";
 
 const SupportedBySection = (props) => {
@@ -10,9 +11,9 @@ const SupportedBySection = (props) => {
       <h3 className="section-tag">{props.tag}</h3>
 
       <p className={styles.details}>Interested in supporting us?</p>
-      <a className="btn btn-solid-red" href="#">
+      <SiteButton className="btn btn-solid-red" href="#">
         Find Out More
-      </a>
+      </SiteButton>
     </Section>
   );
 };

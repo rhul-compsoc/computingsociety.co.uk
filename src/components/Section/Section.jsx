@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 const Section = (props) => {
   /*
@@ -31,7 +31,7 @@ const Section = (props) => {
 
   // props.children gets the contents of any composite component. E.g HeroSection
   return (
-    <section className={classes}>
+    <section className={classes} id={props.id}>
       <div className="container">{props.children}</div>
     </section>
   );

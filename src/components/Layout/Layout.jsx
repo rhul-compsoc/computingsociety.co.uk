@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import "../../assets/scss/init.scss";
 import { layout } from './Layout.module.scss'
 

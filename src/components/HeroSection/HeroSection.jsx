@@ -1,6 +1,7 @@
-import * as React from "react";
+import React from "react";
 // Import Section definition
 import Section from "../Section/Section";
+import SiteButton from "../SiteButton";
 
 const HeroSection = (props) => {
   return (
@@ -20,18 +21,18 @@ const HeroSection = (props) => {
             <div className="row">
               <div className="col">
                 <div className="btn-group pt-3">
-                  <a
-                    className="btn btn-solid-red m-1"
+                  <SiteButton
+                    className="btn-solid-red m-1"
                     href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
                   >
                     Become A Member
-                  </a>
-                  <a
-                    className="btn btn-outline-red m-1"
+                  </SiteButton>
+                  <SiteButton
+                    className="btn-outline-red m-1"
                     href="mailto:hello@computingsociety.co.uk"
                   >
                     Contact Us
-                  </a>
+                  </SiteButton>
                 </div>
               </div>
             </div>
