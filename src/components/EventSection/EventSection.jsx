@@ -12,7 +12,7 @@ const EventSection = ({
   const [viewMore, setViewMore] = useState(false);
 
   return (
-    <Section className="Events" height="full" theme={completed && "dark"}>
+    <Section className="Events" height="full" theme={completed && "dark"} id="events_section">
       <h2>{name}</h2>
       <h3 className="section-tag">{tag}</h3>
 

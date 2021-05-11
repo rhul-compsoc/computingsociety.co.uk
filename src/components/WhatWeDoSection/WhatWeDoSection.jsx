@@ -14,7 +14,7 @@ import Section from "../Section/Section";
 
 const WhatWeDoSection = (props) => {
   return (
-    <Section className="WhatWeDo" height="full">
+    <Section className="WhatWeDo" height="full" id="about_section">
       <h2>{props.name}</h2>
       <h3 className="section-tag">{props.tag}</h3>
 
