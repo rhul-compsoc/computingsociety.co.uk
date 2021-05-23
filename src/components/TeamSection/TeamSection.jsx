@@ -60,14 +60,14 @@ const TeamSection = (props) => {
                     )
                     .filter((_, index) => expanded || index === 0)
                     .map(({ node }) => (
-                      <div key={node.id}>
+                      <div key={node.id} className="py-4">
                         <h4>{node.frontmatter.shortname}</h4>
                         <div className="row">
                           {node.frontmatter.people.map((person) => (
-                            <div className="col-6 col-sm-4 col-md-3" key={`${node.id}-${person.id.frontmatter.name}-${person.role}`}>
+                            <div className="col-6 col-sm-4 col-md-3 py-3" key={`${node.id}-${person.id?.frontmatter.name}-${person.role}`}>
                               <div className="card col-12">
                                 <div className="card-picture">
-                                  {person.id.frontmatter.image && (
+                                  {person.id?.frontmatter.image && (
                                     <GatsbyImage
                                       fluid={{
                                         ...person.id.frontmatter.image
@@ -81,7 +81,7 @@ const TeamSection = (props) => {
                                 <div className="card-content">
                                   <div className="text-center">
                                     <span className="card-person name">
-                                      {person.id.frontmatter.name}
+                                      {person.id?.frontmatter.name}
                                     </span>
                                     <br />
                                     <span className="card-person role">
