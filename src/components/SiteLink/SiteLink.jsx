@@ -11,7 +11,7 @@ const SiteLink = ({ href, onClick, children }) => {
   }
 
   return (
-    <span onClick={onClick} onKeyDown={onClick} className="link">
+    <span onClick={onClick} onKeyDown={onClick} className="link" role="link" tabIndex={0}>
       {children}
     </span>
   );
