@@ -7,7 +7,6 @@ import HeroSection from "../components/HeroSection";
 // ==============
 import Layout from "../components/Layout";
 import MembershipSection from "../components/MembershipSection";
-import SponsorSection from "../components/SponsorSection/SponsorSection";
 import SupportedBySection from "../components/SupportedBySection/SupportedBySection";
 import TeamSection from "../components/TeamSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
