@@ -1,12 +1,23 @@
+import { Link } from "gatsby";
 import React from "react";
 
-const SiteButton = ({ href, onClick, className = "", children }) => {
-  if (href && onClick)
+const SiteButton = ({ to, href, onClick, className = "", children }) => {
+  let uses = 0;
+
+  if (to) uses++;
+  if (href) uses++;
+  if (onClick) uses++;
+
+  if (uses > 1)
     throw new Error(
-      'You cannot use both the "href" and "onClick" functionality simultaneously.'
+      'You cannot assign multiple functionalities to the same SiteButton'
     );
 
-  if (href && href !== '#') {
+  if (to) {
+    return <Link to={to} className="link">{children}</Link>;
+  }
+
+  if (href) {
     return <a href={href} className={`btn ${className}`}>{children}</a>;
   }
 
