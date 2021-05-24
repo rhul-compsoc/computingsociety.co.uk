@@ -6,7 +6,7 @@ import styles from "./SupportedBySection.module.scss";
 
 const SupportedBySection = (props) => {
   return (
-    <Section className="sponsors" height="half">
+    <Section className="sponsors" id="sponsors" height="half">
       <h2>{props.name}</h2>
       <h3 className="section-tag">{props.tag}</h3>
 

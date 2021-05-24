@@ -25,7 +25,7 @@ const Navibar = (props) => {
             <Nav.Link as={Link} to="/#events_section">Events</Nav.Link>
             <Nav.Link as={Link} to="/#about_section">About</Nav.Link>
             <Nav.Link as={Link} to="/#team_section">Our Team</Nav.Link>
-            <Nav.Link as={Link} to="/#link">Sponsors</Nav.Link>
+            <Nav.Link as={Link} to="/#sponsors">Sponsors</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>
