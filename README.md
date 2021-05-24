@@ -1,12 +1,23 @@
-#
+# RHUL CompSoc
 
-## Testing
+- [Website](https://computingsociety.co.uk/)
+
+## Images
+
+![Full Page Screenshot](.github/fullpage.png)
+
+## Contributing
+
+- Please check Notion, open issues and PRs before working on anything or opening a new one!
+- Please ensure you have run `yarn format` before pushing new code.
+
+### Testing
 
 Testing is using `jest` which is the go-to testing suite along with the react testing library for for react utilities.
 
 https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/
 
-### Testing methodolgy
+#### Testing methodolgy
 
 Due to the site being a static site generator, we are not doing really any functional testing. We are instead doing primarily snapshot testing.
 
