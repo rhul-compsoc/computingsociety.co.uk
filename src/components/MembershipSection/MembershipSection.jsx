@@ -15,7 +15,7 @@ const MembershipSection = (props) => {
         </SiteButton>
 
         <SiteButton className="btn btn-solid-discord m-2" href="https://dc.cmpsc.uk/">
-          Join discord
+          Join Discord
         </SiteButton>
       </div>
     </Section>
