@@ -12,7 +12,12 @@ const EventSection = ({
   const [viewMore, setViewMore] = useState(false);
 
   return (
-    <Section className="Events" height="full" theme={completed && "dark"} id="events_section">
+    <Section
+      className="Events"
+      height="full"
+      theme={completed && "dark"}
+      id="events_section"
+    >
       <h2>{name}</h2>
       <h3 className="section-tag">{tag}</h3>
 
@@ -40,11 +45,18 @@ const EventSection = ({
         `}
       >
         {(data) => {
-          let events = data.allMdx.edges.filter(
-            ({ node }) => node.frontmatter.event_completed === completed
-          );
+          let events = data.allMdx.edges
+            .filter(
+              ({ node }) => node.frontmatter.event_completed === completed
+            )
+            .sort(({ node: a }, { node: b }) =>
+              completed
+                ? b.frontmatter.event_start - a.frontmatter.event_start
+                : a.frontmatter.event_start - b.frontmatter.event_start
+            );
           let truncated = false;
 
+          // Truncate documents if there are more than 3 events.
           if (events.length > 3 && !viewMore) {
             events = events.slice(0, 3);
             truncated = true;
