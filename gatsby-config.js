@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Computing Society",
-    decription: "",
+    title: "RHUL Computing Society",
+    decription: "Royal Holloway, University of London Computing Society",
     author: "jcsawyer123",
     twitter: "jcsawyer123",
-    github: "jcsawyer123",
+    github: "rhul-compsoc",
     siteUrl: "https://www.computingsociety.co.uk",
   },
   mapping: {

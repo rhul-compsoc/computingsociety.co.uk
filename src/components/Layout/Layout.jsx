@@ -5,10 +5,12 @@ import { layout } from './Layout.module.scss'
 // Load Components
 import Footer from "../Footer";
 import Header from "../Header";
+import SiteDefaultSEO from "../SiteDefaultSEO";
 
 const Layout = (props) => {
   return (
     <div>
+      <SiteDefaultSEO />
       <div className={layout}>
         <Header />
         <main>{props.children}</main>
