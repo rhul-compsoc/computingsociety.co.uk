@@ -14,7 +14,7 @@ const SiteButton = ({ to, href, onClick, className = "", children }) => {
     );
 
   if (to) {
-    return <Link to={to} className="link">{children}</Link>;
+    return <Link to={to} className={`btn ${className}`}>{children}</Link>;
   }
 
   if (href) {
