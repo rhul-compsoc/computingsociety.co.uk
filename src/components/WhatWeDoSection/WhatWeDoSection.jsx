@@ -47,7 +47,7 @@ const WhatWeDoSection = (props) => {
               <h4 className="name">Socials </h4>
               <p className="description">
                 Whether it is a film night or an SU Takeover. We arrange events
-                that are purely social.;
+                that are purely social.
               </p>
             </div>
           </div>
