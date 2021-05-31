@@ -27,8 +27,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <HeroSection
-        name="Computing Society"
-        tag="This is a website"
+        name={"Royal Holloway\nComputing Society"}
       ></HeroSection>
 
       <MembershipSection

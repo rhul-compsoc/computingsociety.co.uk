@@ -17,22 +17,31 @@ const EventSection = ({
       height="full"
       theme={completed && "dark"}
       id="events_section"
+      name={name}
+      tag={tag}
     >
-      <h2>{name}</h2>
-      <h3 className="section-tag">{tag}</h3>
-
       <StaticQuery
         query={graphql`
           {
-            allMdx(filter: { fields: { template: { eq: "events" } } }) {
+            allMdx(
+              filter: {
+                frontmatter: { show: { eq: true } }
+                fields: { template: { eq: "events" } }
+              }
+            ) {
               edges {
                 node {
                   id
+                  fields {
+                    slug
+                  }
                   frontmatter {
                     name
+                    event_start_string
                     event_start
                     full_description
                     event_completed
+                    render
                     links {
                       label
                       href
@@ -74,24 +83,26 @@ const EventSection = ({
                       <div className="item-head">
                         <h4 className="name">{node.frontmatter.name}</h4>
                         <p className="date">
-                          {new Date(
-                            node.frontmatter.event_start
-                          ).toLocaleDateString()}
+                          {node.frontmatter.event_start_string ??
+                            new Date(
+                              node.frontmatter.event_start
+                            ).toLocaleDateString()}
                         </p>
                       </div>
                       <div className="item-body">
                         <p className="description">
                           {node.frontmatter.full_description}
                         </p>
-                        {node.frontmatter.links.length > 0 && (
-                          <div className="links">
-                            {node.frontmatter.links.map((link) => (
-                              <SiteLink href={link.href} key={link.label}>
-                                {link.label}
-                              </SiteLink>
-                            ))}
-                          </div>
-                        )}
+                        <div className="links">
+                          {node.frontmatter.links.map((link) => (
+                            <SiteLink href={link.href} key={link.label}>
+                              {link.label}
+                            </SiteLink>
+                          ))}
+                          {node.frontmatter.render && (
+                            <SiteLink to={node.fields.slug}>View Page</SiteLink>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>

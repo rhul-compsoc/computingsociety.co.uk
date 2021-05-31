@@ -5,14 +5,11 @@ import React, { useState } from "react";
 import Section from "../Section/Section";
 import SiteLink from "../SiteLink";
 
-const TeamSection = (props) => {
+const TeamSection = ({ name, tag }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Section className="team" height="full" theme="dark" id="team_section">
-      <h2>{props.name}</h2>
-      <h3 className="section-tag">{props.tag}</h3>
-
+    <Section className="team" height="full" theme="dark" id="team_section" name={name} tag={tag}>
       <div className="container py-3">
         <div className="row justify-content-center">
           <div className="col-12 col-md-10 col-xl-8">
