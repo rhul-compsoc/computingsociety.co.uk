@@ -51,6 +51,11 @@ html {
   .btn-group {
     margin-top: 2rem;
     text-align: center;
+    justify-content: center;
+
+    .btn {
+      flex: unset;
+    }
   }
 }
 

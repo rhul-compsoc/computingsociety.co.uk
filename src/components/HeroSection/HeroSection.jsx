@@ -21,7 +21,10 @@ const HeroSection = ({ name }) => {
             className="btn-outline-red m-1"
             href="mailto:hello@computingsociety.co.uk"
           >
-            Contact Us
+            E-mail Us
+          </SiteButton>
+          <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
+            Join Discord
           </SiteButton>
         </div>
       </div>
