@@ -1,0 +1,38 @@
+.freshers2021table {
+  width: 100%;
+
+  tr {
+    // border-bottom: solid #eee;
+  }
+
+  .noBottom {
+    border-bottom: none;
+  }
+
+  td {
+    font-size: 1.5em;
+    min-height: 1.75em;
+    height: 1.5rem;
+    padding: 0.25em;
+  }
+
+  td:first-child{
+    white-space: nowrap;
+    text-align: right;
+
+    h2 {
+      text-align: left;
+    }
+  }
+
+  .freshers2020freshershacklogo {
+    max-height: 10rem;
+    max-width: 100%;
+    margin: -2em;
+  }
+
+  .logoCell {
+    // width: 80%;
+    text-align: center;
+  }
+}

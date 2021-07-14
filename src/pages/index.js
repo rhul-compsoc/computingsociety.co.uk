@@ -10,6 +10,7 @@ import MembershipSection from "../components/MembershipSection";
 import SupportedBySection from "../components/SupportedBySection/SupportedBySection";
 import TeamSection from "../components/TeamSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
+import SiteButton from "../components/SiteButton";
 
 // ==============
 // SITE MARKUP
@@ -28,7 +29,25 @@ const IndexPage = () => {
     <Layout>
       <HeroSection
         name={"Royal Holloway\nComputing Society"}
-      ></HeroSection>
+      >
+        <div className="btn-group pt-3">
+          <SiteButton
+            className="btn-solid-red m-1"
+            href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
+          >
+            Become A Member
+          </SiteButton>
+          <SiteButton
+            className="btn-outline-red m-1"
+            href="mailto:hello@computingsociety.co.uk"
+          >
+            E-mail Us
+          </SiteButton>
+          <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
+            Join Discord
+          </SiteButton>
+        </div>
+      </HeroSection>
 
       <MembershipSection
         name="Membership"
