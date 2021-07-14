@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SponsorSection.module.scss";
+import * as styles from "./SponsorSection.module.scss";
 
 // Import Section definition
 
