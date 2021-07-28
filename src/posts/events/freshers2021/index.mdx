@@ -26,18 +26,16 @@ image: null
 import Section from "../../../components/Section";
 import HeroSection from "../../../components/HeroSection";
 import SiteButton from "../../../components/SiteButton";
-import { freshers2021table, logoCell, freshers2020freshershacklogo, noBottom } from "./index.module.scss";
+import { FreshersPictureHeroSection } from "../../../components/FreshersPictureHeroSection";
+import { freshers2021table, middleCell, freshers2020freshershacklogo, noBottom } from "./index.module.scss";
 import logo_var_orange from "./logo_var_orange.png";
 
-<HeroSection
-  name="Royal Holloway Computing Society Fresher's Events"
-  height="half"
-/>
+<FreshersPictureHeroSection />
 
 <Section
   name="Welcome to Royal Holloway"
   tag="Join us for three weeks of socials, talks and events over fresher's, returner's and welcome week."
-  theme="dark"
+  theme="orange"
 >
   <SiteButton
     className="btn-solid-red m-2"
@@ -49,6 +47,7 @@ import logo_var_orange from "./logo_var_orange.png";
 
 <Section
   tag="Schedule"
+  theme="orange"
 >
   <table className={freshers2021table}>
     <tbody>
@@ -59,7 +58,7 @@ import logo_var_orange from "./logo_var_orange.png";
       </tr>
       <tr>
         <td>Monday 13</td>
-        <td>Rercrmes Social Bedford</td>
+        <td className={middleCell}>Returners Social Bedford</td>
         <td>6pm</td>
       </tr>
       <tr>
@@ -102,7 +101,7 @@ import logo_var_orange from "./logo_var_orange.png";
       </tr>
       <tr>
         <td>Saturday 25</td>
-        <td rowspan="2" className={logoCell}>
+        <td rowspan="2" className={middleCell}>
           <img src={logo_var_orange} className={freshers2020freshershacklogo} />
         </td>
         <td>
@@ -122,12 +121,12 @@ import logo_var_orange from "./logo_var_orange.png";
       </tr>
       <tr>
         <td>Monday 27</td>
-        <td>Whatever Social Chelmsford</td>
+        <td className={middleCell}>Whatever Social Chelmsford</td>
         <td>6pm</td>
       </tr>
       <tr>
         <td>Tuesday 28</td>
-        <td>Something Else Slough</td>
+        <td className={middleCell}>Something Else Slough</td>
         <td>25pm</td>
       </tr>
       <tr>

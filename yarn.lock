@@ -2977,6 +2977,14 @@ adjust-sourcemap-loader@3.0.0:
     loader-utils "^2.0.0"
     regex-parser "^2.2.11"
 
+adjust-sourcemap-loader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/adjust-sourcemap-loader/-/adjust-sourcemap-loader-4.0.0.tgz#fc4a0fd080f7d10471f30a7320f25560ade28c99"
+  integrity sha512-OXwN5b9pCUXNQHJpwwD2qP40byEmSgzj8B4ydSN0uMNYWiFmJ6x6KwUllMmfk8Rwu/HJDFR7U8ubsWBoN0Xp0A==
+  dependencies:
+    loader-utils "^2.0.0"
+    regex-parser "^2.2.11"
+
 agent-base@6:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-6.0.2.tgz#49fff58577cfee3f37176feab4c22e00f86d7f77"
@@ -12525,7 +12533,7 @@ postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
 
-postcss@7.0.36:
+postcss@7.0.36, postcss@^7.0.35:
   version "7.0.36"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
   integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
@@ -13593,6 +13601,17 @@ resolve-url-loader@^3.1.2:
     postcss "7.0.36"
     rework "1.0.1"
     rework-visit "1.0.0"
+    source-map "0.6.1"
+
+resolve-url-loader@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-url-loader/-/resolve-url-loader-4.0.0.tgz#d50d4ddc746bb10468443167acf800dcd6c3ad57"
+  integrity sha512-05VEMczVREcbtT7Bz+C+96eUO5HDNvdthIiMB34t7FcF8ehcu4wC0sSgPUubs3XW2Q3CNLJk/BJrCU9wVRymiA==
+  dependencies:
+    adjust-sourcemap-loader "^4.0.0"
+    convert-source-map "^1.7.0"
+    loader-utils "^2.0.0"
+    postcss "^7.0.35"
     source-map "0.6.1"
 
 resolve-url@^0.2.1:

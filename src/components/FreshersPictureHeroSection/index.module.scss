@@ -1,0 +1,7 @@
+@import '_variables';
+
+.freshersHeroSection {
+  background-image: linear-gradient(180deg, #e5884e66, $compsoc-5), url('./background.jpg');
+  background-size: cover, cover;
+  background-position: center, center;
+}

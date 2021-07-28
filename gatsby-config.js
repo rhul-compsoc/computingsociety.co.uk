@@ -23,6 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sass",
       options: {
+        useResolveUrlLoader: true,
         sassOptions: {
           includePaths: ["src/assets/scss"],
         },

@@ -1,5 +1,6 @@
 .freshers2021table {
   width: 100%;
+  overflow-x: scroll;
 
   tr {
     // border-bottom: solid #eee;
@@ -25,14 +26,13 @@
     }
   }
 
+  .middleCell {
+    text-align: center;
+  }
+
   .freshers2020freshershacklogo {
     max-height: 10rem;
     max-width: 100%;
     margin: -2em;
-  }
-
-  .logoCell {
-    // width: 80%;
-    text-align: center;
   }
 }
