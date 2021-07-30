@@ -1,7 +1,6 @@
-import React from "react"
+import React from "react";
 import HeroSection from "../HeroSection/HeroSection";
-import { freshersHeroSection, title, subtitle, container } from './index.module.scss';
-import logoImage from './logo.png'
+import { container, freshersHeroSection, subtitle, title } from './index.module.scss';
 
 const FreshersPictureHeroSection = () => (
   <HeroSection
@@ -18,4 +17,5 @@ const FreshersPictureHeroSection = () => (
 
 export {
   FreshersPictureHeroSection
-}
+};
+
