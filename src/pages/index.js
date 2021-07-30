@@ -12,6 +12,8 @@ import TeamSection from "../components/TeamSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
 import SiteButton from "../components/SiteButton";
 
+import { FreshersPictureHeroSection } from "../components/FreshersPictureHeroSection";
+
 // ==============
 // SITE MARKUP
 // ==============
@@ -29,6 +31,7 @@ const IndexPage = () => {
     <Layout>
       <HeroSection
         name={"Royal Holloway\nComputing Society"}
+        height="half"
       >
         <div className="btn-group pt-3">
           <SiteButton
@@ -48,6 +51,14 @@ const IndexPage = () => {
           </SiteButton>
         </div>
       </HeroSection>
+
+      <FreshersPictureHeroSection
+        height="half"
+      >
+        <SiteButton className="btn-solid-red m-1" to="/events/freshers2021">
+          What's up?
+        </SiteButton>
+      </FreshersPictureHeroSection>
 
       <MembershipSection
         name="Membership"
