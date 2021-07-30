@@ -11,6 +11,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
 import logo from '../../images/logo.png';
+import favicon from '../../images/server-icon.png';
 
 const SiteDefaultSEO = ({ lang = "en-GB" }) => {
   const { site } = useStaticQuery(
@@ -86,7 +87,7 @@ const SiteDefaultSEO = ({ lang = "en-GB" }) => {
             defaultTitle={site.siteMetadata.title}
             meta={metaTags}
           >
-            {/* <link rel="shortcut icon" type="image/png" href={favicon} /> */}
+            <link rel="shortcut icon" type="image/png" href={favicon} />
           </Helmet>
         );
       }}

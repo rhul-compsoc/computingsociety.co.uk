@@ -46,5 +46,17 @@ module.exports = {
         ],
       }
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "RHUL Computing Society",
+        short_name: "RHUL CompSoc",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#e5884e",
+        display: "standalone",
+        icon: "src/images/favicon.png"
+      }
+    }
   ],
 };
