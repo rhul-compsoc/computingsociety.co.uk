@@ -8,6 +8,7 @@ const EventSection = ({
   name = "Untitled Section",
   tag = "Untitled Tag",
   completed = true,
+  ignoreTags = [],
 }) => {
   const [viewMore, setViewMore] = useState(false);
 
@@ -44,6 +45,7 @@ const EventSection = ({
                     full_description
                     event_completed
                     render
+                    tags
                     links {
                       label
                       href
@@ -59,6 +61,17 @@ const EventSection = ({
           let events = data.allMdx.edges
             .filter(
               ({ node }) => node.frontmatter.event_completed === completed
+            )
+            .filter(
+              ({ node }) => {
+                for (const eventTag of node.frontmatter.tags) {
+                  for (const ignoreTag of ignoreTags) {
+                    if (eventTag === ignoreTag) return false;
+                  }
+                }
+
+                return true;
+              }
             )
             .map((edge) =>
               Object.assign(edge, {

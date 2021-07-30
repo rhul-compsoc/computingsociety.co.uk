@@ -15,6 +15,10 @@ event_date_display: both
 # Pass an array of { label, link }
 links: []
 
+# A list of tags
+tags:
+  - freshers2021
+
 # A long description for the event.
 full_description: |
   CompSoc's full range of events for freshers of Royal Holloway, University of London.
@@ -24,129 +28,178 @@ image: null
 ---
 
 import Section from "../../../components/Section";
+import EventSection from "../../../components/EventSection";
 import HeroSection from "../../../components/HeroSection";
 import SiteButton from "../../../components/SiteButton";
 import { FreshersPictureHeroSection } from "../../../components/FreshersPictureHeroSection";
-import { freshers2021table, middleCell, freshers2020freshershacklogo, noBottom } from "./index.module.scss";
+import {
+  freshers2020page,
+  freshers2021table,
+  middleCell,
+  freshers2020freshershacklogo,
+  freshers2020capturetheflag,
+  noBottom,
+  freshers2021tableContainer,
+} from "./index.module.scss";
 import logo_var_orange from "./logo_var_orange.png";
+import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
 
-<FreshersPictureHeroSection />
+<div className={freshers2020page}>
 
-<Section
-  name="Welcome to Royal Holloway"
-  tag="Join us for three weeks of socials, talks and events over fresher's, returner's and welcome week."
-  theme="orange"
->
-  <SiteButton
-    className="btn-solid-red m-2"
-    href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
+  <FreshersPictureHeroSection />
+
+  <Section
+    name="Welcome to Royal Holloway"
+    tag="Join us for three weeks of socials, talks and events over fresher's, returner's and welcome week."
+    theme="orange"
+    className="text-center"
   >
-    get membership @ su.rhul.ac.uk
-  </SiteButton>
-</Section>
+    <SiteButton
+      className="btn-solid-red m-2"
+      href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
+    >
+      get membership @ su.rhul.ac.uk
+    </SiteButton>
+    <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
+      Join Discord
+    </SiteButton>
+  </Section>
 
-<Section
-  tag="Schedule"
-  theme="orange"
->
-  <table className={freshers2021table}>
-    <tbody>
-      <tr className={noBottom}>
-        <td colspan="3">
-          <h2>Week Zero ~ 13-20 September</h2>
-        </td>
-      </tr>
-      <tr>
-        <td>Monday 13</td>
-        <td className={middleCell}>Returners Social Bedford</td>
-        <td>6pm</td>
-      </tr>
-      <tr>
-        <td>Tuesday 14</td>
-      </tr>
-      <tr>
-        <td>Wednesday 15</td>
-      </tr>
-      <tr>
-        <td>Thursday 16</td>
-      </tr>
-      <tr>
-        <td>Friday 17</td>
-      </tr>
-      <tr>
-        <td>Saturday 18</td>
-      </tr>
-      <tr className={noBottom}>
-        <td>Sunday 19</td>
-      </tr>
-      <tr className={noBottom}>
-        <td colspan="3">
-          <h2>Week One ~ 20-26 September</h2>
-        </td>
-      </tr>
-      <tr>
-        <td>Monday 20</td>
-      </tr>
-      <tr>
-        <td>Tuesday 21</td>
-      </tr>
-      <tr>
-        <td>Wednesday 22</td>
-      </tr>
-      <tr>
-        <td>Thursday 23</td>
-      </tr>
-      <tr>
-        <td>Friday 24</td>
-      </tr>
-      <tr>
-        <td>Saturday 25</td>
-        <td rowspan="2" className={middleCell}>
-          <img src={logo_var_orange} className={freshers2020freshershacklogo} />
-        </td>
-        <td>
-          11am to 10pm
-        </td>
-      </tr>
-      <tr className={noBottom}>
-        <td>Sunday 26</td>
-        <td>
-          11am to 10pm
-        </td>
-      </tr>
-      <tr className={noBottom}>
-        <td colspan="3">
-          <h2>Week Two ~ 27 September - 03 October</h2>
-        </td>
-      </tr>
-      <tr>
-        <td>Monday 27</td>
-        <td className={middleCell}>Whatever Social Chelmsford</td>
-        <td>6pm</td>
-      </tr>
-      <tr>
-        <td>Tuesday 28</td>
-        <td className={middleCell}>Something Else Slough</td>
-        <td>25pm</td>
-      </tr>
-      <tr>
-        <td>Wednesday 29</td>
-      </tr>
-      <tr>
-        <td>Thursday 30</td>
-      </tr>
-      <tr>
-        <td>Friday 01</td>
-      </tr>
-      <tr>
-        <td>Saturday 02</td>
-      </tr>
-      <tr className={noBottom}>
-        <td>Sunday 03</td>
-      </tr>
-    </tbody>
-  </table>
-</Section>
+  <Section
+    tag="Schedule"
+    theme="orange"
+    className="text-center"
+  >
+    <h2>Week Zero - 13-19 September</h2>
+    <div className={freshers2021tableContainer}> 
+      <table className={freshers2021table}>
+        <tbody>
+          <tr>
+            <td>Wednesday 15th</td>
+            <td>7pm</td>
+            <td>Returner's Social</td>
+          </tr>
+          <tr>
+            <td>Friday 17th</td>
+            <td>8pm</td>
+            <td>
+              Returner's Pub Crawl<br />
+              <small>@ Packhorse Pub</small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Week One - 20-26 September</h2>
+    <div className={freshers2021tableContainer}> 
+      <table className={freshers2021table}>
+        <tbody>
+          <tr>
+            <td>Monday 20th</td>
+            <td>7pm</td>
+            <td rowspan="2">
+            Fresher's Fair<br />
+              <small>@ Sports Hall</small>
+            </td>
+          </tr>
+          <tr>
+            <td>Tuesday 21st</td>
+            <td>8pm</td>
+          </tr>
+          <tr>
+            <td>Wednesday 22nd</td>
+            <td>3pm</td>
+            <td>Welcome to CompSoc</td>
+          </tr>
+          <tr>
+            <td>Thursday 23rd</td>
+            <td>7pm</td>
+            <td>Pub Crawl</td>
+          </tr>
+          <tr>
+            <td>Friday 24th</td>
+            <td>6pm</td>
+            <td>Film Night</td>
+          </tr>
+          <tr>
+            <td>Saturday 25th</td>
+            <td>
+              10am
+            </td>
+            <td rowspan="2">
+              <img
+                src={logo_var_orange}
+                className={freshers2020freshershacklogo}
+                alt="Fresher's Hack 2021"
+                title="Fresher's Hack 2021"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Sunday 26th</td>
+            <td>
+              10am
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Week Two - 27 September - 03 October</h2>
+    <div className={freshers2021tableContainer}> 
+      <table className={freshers2021table}>
+        <tbody>
+          <tr>
+            <td>Monday 27th</td>
+            <td>7pm</td>
+            <td>Pub Crawl AF</td>
+          </tr>
+          <tr>
+            <td>Tuesday 28th</td>
+            <td>7pm</td>
+            <td>Games Night</td>
+          </tr>
+          <tr>
+            <td>Wednesday 29th</td>
+            <td>3pm</td>
+            <td>CompSoc AGM/Hustings</td>
+          </tr>
+          <tr>
+            <td>Thursday 30th</td>
+            <td>7pm</td>
+            <td>
+              Pub Social<br />
+              <small>@ Packhorse Pub</small>
+            </td>
+          </tr>
+          <tr>
+            <td>Friday 1st</td>
+            <td>6pm</td>
+            <td>Film Night</td>
+          </tr>
+          <tr>
+            <td>Saturday 2nd</td>
+            <td>10am</td>
+            <td>
+              <img
+                src={logo_ctf}
+                className={freshers2020capturetheflag}
+                alt="Royal Holloway Computing Society Capture The Flag"
+                title="Royal Holloway Computing Society Capture The Flag"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Section>
+</div>
+
+<EventSection
+  name="More Events"
+  tag="Our events don't just end here - Here's some more events throughout the year"
+  completed={false}
+  ignoreTags={["freshers2021"]}
+></EventSection>
 
 <!-- ![](./eieipadry.png) -->
 

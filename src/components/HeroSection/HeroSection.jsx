@@ -4,9 +4,9 @@ import Section from "../Section/Section";
 import SiteButton from "../SiteButton";
 import { heroNameClass } from "./HeroSection.module.scss";
 
-const HeroSection = ({ name, children, height="full", className }) => {
+const HeroSection = ({ name, children, height="full", className="" }) => {
   return (
-    <Section className="hero d-flex align-items-center" height={height} className={className}>
+    <Section className={`hero d-flex align-items-center ${className}`} height={height}>
       <div className="text-center">
         <h1 className={heroNameClass}>{name}</h1>
         { children }
