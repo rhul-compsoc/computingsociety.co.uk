@@ -9,6 +9,7 @@ const EventSection = ({
   tag = "Untitled Tag",
   completed = true,
   ignoreTags = [],
+  truncateAt = 3,
 }) => {
   const [viewMore, setViewMore] = useState(false);
 
@@ -91,8 +92,8 @@ const EventSection = ({
           let truncated = false;
 
           // Truncate documents if there are more than 3 events.
-          if (events.length > 3 && !viewMore) {
-            events = events.slice(0, 3);
+          if (events.length > truncateAt && !viewMore) {
+            events = events.slice(0, truncateAt);
             truncated = true;
           }
 

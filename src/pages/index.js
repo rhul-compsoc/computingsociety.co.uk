@@ -55,15 +55,17 @@ const IndexPage = () => {
       ></MembershipSection>
 
       <EventSection
-        name="Events"
-        tag="These are our upcoming events"
+        name="Upcoming Events"
+        tag="A look at what we have coming up"
         completed={false}
+        truncateAt={6}
       ></EventSection>
 
       <EventSection
         name="Past Events"
         tag="We have a range of events throughout the year"
         completed={true}
+        truncateAt={3}
       ></EventSection>
 
       <WhatWeDoSection
