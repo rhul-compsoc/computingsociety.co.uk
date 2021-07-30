@@ -1,0 +1,9 @@
+/dc  https://dc.cmpsc.uk
+/discord  https://dc.cmpsc.uk
+
+http://cmpsc.uk/*  https://computingsociety.co.uk/$1
+https://cmpsc.uk/*  https://computingsociety.co.uk/$1
+http://www.cmpsc.uk/*  https://computingsociety.co.uk/$1
+https://www.cmpsc.uk/*  https://computingsociety.co.uk/$1
+http://www.computingsociety.uk/*  https://computingsociety.co.uk/$1
+https://www.computingsociety.uk/*  https://computingsociety.co.uk/$1

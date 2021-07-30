@@ -80,6 +80,7 @@ exports.createPages = ({ actions, graphql, reporter }) => {
             }
             frontmatter {
               render
+              redirects
             }
           }
         }
@@ -100,6 +101,15 @@ exports.createPages = ({ actions, graphql, reporter }) => {
         const template = node.fields.template
 
         let slug = node.fields.slug
+
+        if (node.frontmatter.redirects && Array.isArray(node.frontmatter.redirects)) {
+          for (const redirect of node.frontmatter.redirects) {
+            createRedirect({
+              fromPath: redirect,
+              toPath: slug
+            })
+          }
+        }
 
         // Create a page at the expected location
         createPage({
