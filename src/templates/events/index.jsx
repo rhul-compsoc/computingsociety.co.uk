@@ -9,7 +9,7 @@ const EventTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SiteSEO title={frontmatter.name} description={frontmatter.subtitle} />
+      <SiteSEO title={frontmatter.name} description={frontmatter.full_description} image={frontmatter.image?.publicURL} />
       <MDXRenderer>{body}</MDXRenderer>
     </Layout>
   );
@@ -23,7 +23,10 @@ export const pageQuery = graphql`
       body
       frontmatter {
         name
-        subtitle
+        image {
+          publicURL
+        }
+        full_description
       }
     }
   }

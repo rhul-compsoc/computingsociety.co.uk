@@ -10,6 +10,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
+import logo from '../../images/logo.png';
 
 const SiteDefaultSEO = ({ lang = "en-GB" }) => {
   const { site } = useStaticQuery(
@@ -54,10 +55,10 @@ const SiteDefaultSEO = ({ lang = "en-GB" }) => {
             property: `og:description`,
             content: site.siteMetadata.description,
           },
-          // {
-          //   property: "og:image",
-          //   content: logo,
-          // },
+          {
+            property: "og:image",
+            content: logo,
+          },
           {
             name: `twitter:card`,
             content: `summary`,
