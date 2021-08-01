@@ -31,7 +31,7 @@ const IndexPage = () => {
     <Layout>
       <HeroSection
         name={"Royal Holloway\nComputing Society"}
-        height="half"
+        height="full"
       >
         <div className="btn-group pt-3">
           <SiteButton
