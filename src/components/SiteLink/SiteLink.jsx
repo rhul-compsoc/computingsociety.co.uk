@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-const SiteLink = ({ to, href, onClick, children }) => {
+const SiteLink = ({ to, href, onClick, children, target, ...props }) => {
   let uses = 0;
 
   if (to) uses++;
@@ -13,16 +13,17 @@ const SiteLink = ({ to, href, onClick, children }) => {
       'You cannot assign multiple functionalities to the same SiteLink'
     );
 
-  if (to) {
-    return <Link to={to} className="link">{children}</Link>;
+  if (href || target) {
+    return <a {...props} href={href || to} target={target} className="link">{children}</a>;
   }
 
-  if (href) {
-    return <a href={href} className="link">{children}</a>;
+  if (to) {
+    return <Link {...props} to={to} className="link">{children}</Link>;
   }
+
 
   return (
-    <span onClick={onClick} onKeyDown={onClick} className="link" role="link" tabIndex={0}>
+    <span {...props} onClick={onClick} onKeyDown={onClick} className="link" role="link" tabIndex={0}>
       {children}
     </span>
   );

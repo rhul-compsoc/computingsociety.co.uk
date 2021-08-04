@@ -91,10 +91,12 @@ const EventSection = ({
             );
           let truncated = false;
 
-          // Truncate documents if there are more than 3 events.
-          if (events.length > truncateAt && !viewMore) {
-            events = events.slice(0, truncateAt);
-            truncated = true;
+          if (truncateAt) {
+            // Truncate documents if there are more than 3 events.
+            if (events.length > truncateAt && !viewMore) {
+              events = events.slice(0, truncateAt);
+              truncated = true;
+            }
           }
 
           return (
