@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-const SiteButton = ({ to, href, onClick, className = "", children }) => {
+const SiteButton = ({ to, href, onClick, className = "", target, children, ...props }) => {
   let uses = 0;
 
   if (to) uses++;
@@ -13,12 +13,12 @@ const SiteButton = ({ to, href, onClick, className = "", children }) => {
       'You cannot assign multiple functionalities to the same SiteButton'
     );
 
-  if (to) {
-    return <Link to={to} className={`btn ${className}`}>{children}</Link>;
+  if (href || target) {
+    return <a {...props} href={href || to} target={target} className={`btn ${className}`}>{children}</a>;
   }
 
-  if (href) {
-    return <a href={href} className={`btn ${className}`}>{children}</a>;
+  if (to) {
+    return <Link to={to} className={`btn ${className}`}>{children}</Link>;
   }
 
   return (

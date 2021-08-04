@@ -6,7 +6,7 @@ import SiteButton from "../../components/SiteButton";
 const FreshersPage = () => {
   return (
     <FreshersPictureHeroSection height="fullscreen">
-      <SiteButton className="btn-solid-red m-1" to="/events/freshers2021">
+      <SiteButton className="btn-solid-red m-1" target="_blank" to="/events/freshers2021">
         See upcoming events
       </SiteButton>
     </FreshersPictureHeroSection>
