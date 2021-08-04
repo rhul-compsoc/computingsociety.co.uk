@@ -105,6 +105,12 @@ section {
     }
   }
 
+  @media screen and (max-width: 800px) {
+    .section-tag {
+      font-size: 24pt;     
+    }
+  }
+
   .link {
     &, a, span {
       cursor: pointer;
