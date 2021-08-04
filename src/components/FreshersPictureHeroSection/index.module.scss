@@ -18,11 +18,16 @@
   background-position: center, center;
 
   .container {
-    
+    overflow-x: hidden;
     .title {
       font-size: 10em;
       font-family: 'Hey August', 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-weight: lighter;
+      max-width: 95vw;
+
+      @media screen and (max-width: 600px) {
+        font-size: 6em;
+      }
     }
     
     .subtitle {

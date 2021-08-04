@@ -13,20 +13,35 @@
   section h3 {
     margin: unset;
   }
+
+  // div[class="container"] {
+  //   padding-right: unset;
+  //   padding-left: unset;
+  // }
 }
 
 .freshers2021tableContainer {
   width: 100%;
   padding: 1em;
+  overflow-x: auto;
+  overflow-y: hidden;
   background-color: $compsoc-4;
   display: flex;
   justify-content: center;
+  
+  @media screen and (max-width: 992px) {
+    width: unset;
+    justify-content: left;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.6em;
+  }
 }
 
 .freshers2021table {
   width: 100%;
   max-width: 800px;
-  overflow-x: scroll;
   font-weight: 900;
   color: white;
   background-color: $compsoc-4;
