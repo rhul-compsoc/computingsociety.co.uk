@@ -68,6 +68,10 @@ section {
   min-height: 20vh;
   font-family: $font-family;
 
+  &.fullscreen {
+    min-height: 100vh;
+  }
+
   &.full {
     min-height: 66vh;
   }
