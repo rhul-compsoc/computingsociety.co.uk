@@ -5,7 +5,7 @@ module.exports = {
     author: "jcsawyer123",
     twitter: "jcsawyer123",
     github: "rhul-compsoc",
-    siteUrl: "https://www.computingsociety.co.uk",
+    siteUrl: "https://computingsociety.co.uk",
   },
   mapping: {
     "Mdx.frontmatter.people.id": "Mdx.fields.id",
