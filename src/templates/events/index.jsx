@@ -9,7 +9,11 @@ const EventTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <SiteSEO title={frontmatter.name} description={frontmatter.full_description} image={frontmatter.image?.publicURL} />
+      <SiteSEO
+        title={frontmatter.name}
+        description={frontmatter.full_description}
+        image={frontmatter.image?.publicURL}
+      />
       <MDXRenderer>{body}</MDXRenderer>
     </Layout>
   );
