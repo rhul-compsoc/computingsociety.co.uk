@@ -1,7 +1,7 @@
 import React from "react";
 // Import Section definition
 import Section from "../Section/Section";
-import SiteButton from "../SiteButton";
+import { SiteButton } from "../SiteClickable";
 import * as styles from "./SupportedBySection.module.scss";
 
 const SupportedBySection = ({name, tag}) => {

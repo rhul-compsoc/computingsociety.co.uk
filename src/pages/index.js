@@ -10,9 +10,10 @@ import MembershipSection from "../components/MembershipSection";
 import SupportedBySection from "../components/SupportedBySection/SupportedBySection";
 import TeamSection from "../components/TeamSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
-import SiteButton from "../components/SiteButton";
+import { SiteButton } from "../components/SiteClickable";
 
 import { FreshersPictureHeroSection } from "../components/FreshersPictureHeroSection";
+// import NewsSection from "../components/NewsSection/EventSection";
 
 // ==============
 // SITE MARKUP
@@ -63,6 +64,7 @@ const IndexPage = () => {
       <MembershipSection
         name="Membership"
         tag="Our members always come first. We aim to provide great experiences for everyone."
+        theme="dark"
       ></MembershipSection>
 
       <EventSection
@@ -70,6 +72,7 @@ const IndexPage = () => {
         tag="A look at what we have coming up"
         completed={false}
         truncateAt={6}
+        theme="light"
       ></EventSection>
 
       <EventSection
@@ -77,6 +80,7 @@ const IndexPage = () => {
         tag="We have a range of events throughout the year"
         completed={true}
         truncateAt={3}
+        theme="dark"
       ></EventSection>
 
       <WhatWeDoSection

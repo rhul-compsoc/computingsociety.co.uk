@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Section from "../components/Section/Section";
-import SiteLink from "../components/SiteLink";
+import { SiteLink } from "../components/SiteClickable";
 import SiteSEO from "../components/SiteSEO";
 
 // markup

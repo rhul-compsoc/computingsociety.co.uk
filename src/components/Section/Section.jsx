@@ -4,7 +4,7 @@ const Section = ({
   theme = 'light',
   height = '',
   className,
-  id,
+  id = "",
   name,
   tag,
   children,

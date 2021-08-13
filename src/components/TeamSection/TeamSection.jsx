@@ -3,7 +3,7 @@ import GatsbyImage from "gatsby-image";
 import React, { useState } from "react";
 // Import Section definition
 import Section from "../Section/Section";
-import SiteLink from "../SiteLink";
+import { SiteLink } from "../SiteClickable";
 
 const TeamSection = ({ name, tag }) => {
   const [expanded, setExpanded] = useState(false);

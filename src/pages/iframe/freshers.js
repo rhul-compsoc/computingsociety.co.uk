@@ -1,6 +1,6 @@
 import React from "react";
 import { FreshersPictureHeroSection } from "../../components/FreshersPictureHeroSection";
-import SiteButton from "../../components/SiteButton";
+import { SiteButton } from "../../components/SiteClickable";
 
 // markup
 const FreshersPage = () => {

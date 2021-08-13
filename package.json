@@ -26,6 +26,7 @@
     "@mdx-js/react": "^1.6.22",
     "@popperjs/core": "^2.9.3",
     "bootstrap": "^5.1.0",
+    "canvas": "^2.8.0",
     "gatsby": "^3.11.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^3.11.0",

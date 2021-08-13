@@ -1,5 +1,5 @@
 import React from "react";
-import SiteButton from "../../components/SiteButton";
+import { SiteButton } from "../../components/SiteClickable";
 
 // markup
 const FreshersPage = () => {

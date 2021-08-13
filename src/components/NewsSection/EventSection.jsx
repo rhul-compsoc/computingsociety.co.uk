@@ -4,10 +4,9 @@ import React, { useState } from "react";
 import Section from "../Section/Section";
 import { SiteLink } from "../SiteClickable";
 
-const EventSection = ({
+const NewsSection = ({
   name = "Untitled Section",
   tag = "Untitled Tag",
-  completed = true,
   ignoreTags = [],
   truncateAt = 3,
   theme = "",
@@ -29,7 +28,7 @@ const EventSection = ({
             allMdx(
               filter: {
                 frontmatter: { show: { eq: true } }
-                fields: { template: { eq: "events" } }
+                fields: { template: { eq: "news" } }
               }
             ) {
               edges {
@@ -40,12 +39,9 @@ const EventSection = ({
                   }
                   frontmatter {
                     name
-                    event_start
-                    event_end
-                    event_date_string
-                    event_date_display
+                    page_created
+                    page_edited
                     full_description
-                    event_completed
                     render
                     tags
                     links {
@@ -61,34 +57,18 @@ const EventSection = ({
       >
         {(data) => {
           let events = data.allMdx.edges
-            .filter(
-              ({ node }) => node.frontmatter.event_completed === completed
-            )
-            .filter(
-              ({ node }) => {
-                for (const eventTag of node.frontmatter.tags) {
-                  for (const ignoreTag of ignoreTags) {
-                    if (eventTag === ignoreTag) return false;
-                  }
-                }
-
-                return true;
-              }
-            )
             .map((edge) =>
               Object.assign(edge, {
                 node: Object.assign(edge.node, {
                   frontmatter: Object.assign(edge.node.frontmatter, {
-                    event_start: new Date(edge.node.frontmatter.event_start),
-                    event_end: new Date(edge.node.frontmatter.event_end),
+                    page_created: new Date(edge.node.frontmatter.page_created),
+                    page_edited: new Date(edge.node.frontmatter.page_edited),
                   }),
                 }),
               })
             )
             .sort(({ node: a }, { node: b }) =>
-              completed
-                ? b.frontmatter.event_start - a.frontmatter.event_start
-                : a.frontmatter.event_start - b.frontmatter.event_start
+              a.frontmatter.page_created - b.frontmatter.page_created
             );
           let truncated = false;
 
@@ -105,10 +85,7 @@ const EventSection = ({
               <div className="row event">
                 {events.map(({ node }) => {
                   const {
-                    event_date_string,
-                    event_date_display,
-                    event_start,
-                    event_end,
+                    page_created
                   } = node.frontmatter;
                   return (
                     <div
@@ -119,14 +96,7 @@ const EventSection = ({
                         <div className="item-head">
                           <h4 className="name">{node.frontmatter.name}</h4>
                           <p className="date">
-                            {event_date_display === "start" &&
-                              event_start.toLocaleDateString()}
-                            {event_date_display === "end" &&
-                              event_end.toLocaleDateString()}
-                            {event_date_display === "string" &&
-                              event_date_string}
-                            {event_date_display === "both" &&
-                              `${event_start.toLocaleDateString()} to ${event_end.toLocaleDateString()}`}
+                            {page_created.toLocaleDateString()}
                           </p>
                         </div>
                         <div className="item-body">
@@ -166,4 +136,4 @@ const EventSection = ({
   );
 };
 
-export default EventSection;
+export default NewsSection;
