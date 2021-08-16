@@ -8,7 +8,7 @@ const SupportedBySection = ({name, tag}) => {
   return (
     <Section className="sponsors" id="sponsors" height="half" name={name} tag={tag}>
       <p className={styles.details}>Interested in supporting us?</p>
-      <SiteButton className="btn btn-solid-red" href="mailto:hello@computingsociety.co.uk">
+      <SiteButton className="btn btn-solid-red" href="https://cmpsc.uk/sponsor">
         Find Out More
       </SiteButton>
     </Section>
