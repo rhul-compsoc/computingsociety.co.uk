@@ -20,7 +20,7 @@ const TeamSection = ({ data }) => {
           .map(({ node }, i) => {
             const peopleWithPictures = node.frontmatter.people.filter(person => person.id.frontmatter.image)
             const peopleWithoutPictures = node.frontmatter.people.filter(person => !person.id.frontmatter.image)
-            const id = `committee-${node.frontmatter.shortname.replaceAll(' ', '')}`
+            const id = `committee-${node.frontmatter.shortname.replace(/ /g, '')}`
 
             return (
               <Section

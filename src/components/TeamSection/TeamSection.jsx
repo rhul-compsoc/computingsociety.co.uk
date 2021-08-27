@@ -64,11 +64,10 @@ const TeamSection = ({ name, tag }) => {
                     .map(({ node }) => {
                       const peopleWithPictures = node.frontmatter.people.filter(person => person.id.frontmatter.image)
                       const peopleWithoutPictures = node.frontmatter.people.filter(person => !person.id.frontmatter.image)
-                      const id = `committee-${node.frontmatter.shortname.replaceAll(' ', '')}`
 
                       return (
                         <div key={node.id} className="py-4">
-                          <h4 id={id}>{node.frontmatter.shortname}</h4>
+                          <h4>{node.frontmatter.shortname}</h4>
                           <div className="row">
                             {[...peopleWithPictures, ...peopleWithoutPictures].map((person) => (
                               <div
