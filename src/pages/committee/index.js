@@ -9,7 +9,10 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 const TeamSection = ({ data }) => {
   return (
     <Layout>
-      <SiteSEO title="Committee" />
+      <SiteSEO
+        title="Committee"
+        description="A look at all committee members from CompSoc and their achievements since 2012."
+      />
       {
         data.allMdx.edges
           .sort(
