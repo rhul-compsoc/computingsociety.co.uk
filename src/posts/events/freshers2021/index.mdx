@@ -39,13 +39,14 @@ image: ./freshers_preview.jpg
 import Section from "../../../components/Section";
 import EventSection from "../../../components/EventSection";
 import HeroSection from "../../../components/HeroSection";
-import { SiteButton } from "../../../components/SiteClickable";
+import { SiteLink, SiteButton } from "../../../components/SiteClickable";
 import { FreshersPictureHeroSection } from "../../../components/FreshersPictureHeroSection";
 import {
   freshers2020page,
   freshers2021tableContainerSection,
   freshers2021table,
   freshers2020freshershacklogo,
+  freshers2020freshershacklogolink,
   freshers2020capturetheflag,
   noBottom,
   freshers2021tableContainer,
@@ -152,12 +153,14 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
               10am - 12pm
             </td>
             <td rowspan="2">
-              <img
-                src={logo_var_orange}
-                className={freshers2020freshershacklogo}
-                alt="Fresher's Hack 2021"
-                title="Fresher's Hack 2021"
-              />
+              <SiteLink className={freshers2020freshershacklogolink} href="https://royalhackaway.com/events/freshers2021">
+                <img
+                  src={logo_var_orange}
+                  className={freshers2020freshershacklogo}
+                  alt="Fresher's Hack 2021"
+                  title="Fresher's Hack 2021"
+                />
+              </SiteLink>
             </td>
           </tr>
           <tr>
