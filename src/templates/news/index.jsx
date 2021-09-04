@@ -14,7 +14,9 @@ const NewsTemplate = ({ data }) => {
         description={frontmatter.full_description}
         image={frontmatter.image?.publicURL}
       />
-      <MDXRenderer>{body}</MDXRenderer>
+      <div class="container py-5">
+        <MDXRenderer>{body}</MDXRenderer>
+      </div>
     </Layout>
   );
 };
