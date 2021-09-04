@@ -13,7 +13,7 @@ import WhatWeDoSection from "../components/WhatWeDoSection";
 import { SiteButton } from "../components/SiteClickable";
 
 import { FreshersPictureHeroSection } from "../components/FreshersPictureHeroSection";
-// import NewsSection from "../components/NewsSection/EventSection";
+import NewsSection from "../components/NewsSection/EventSection";
 
 // ==============
 // SITE MARKUP
@@ -75,27 +75,37 @@ const IndexPage = () => {
         theme="light"
       ></EventSection>
 
+      <NewsSection
+        name="News"
+        tag="The latest in our society"
+        theme="dark"
+      />
+
       <EventSection
         name="Past Events"
         tag="We have a range of events throughout the year"
         completed={true}
         truncateAt={3}
-        theme="dark"
+        theme="light"
       ></EventSection>
+
 
       <WhatWeDoSection
         name="What We Do"
         tag="We are here to provide a range of activities and support."
+        theme="dark"
       ></WhatWeDoSection>
 
       <TeamSection
         name="The Team"
         tag="This is all possible thanks to our hard working committee!"
+        theme="light"
       ></TeamSection>
 
       <SupportedBySection
         name="Supported By"
         tag="All of what we do is generously supported by our partners in industry."
+        theme="dark"
       ></SupportedBySection>
 
       {/* <SponsorSection /> */}

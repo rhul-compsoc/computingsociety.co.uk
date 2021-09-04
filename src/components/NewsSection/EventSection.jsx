@@ -15,10 +15,9 @@ const NewsSection = ({
 
   return (
     <Section
-      className="Events"
-      height="full"
+      className="media"
       theme={theme}
-      id="events_section"
+      id="news_section"
       name={name}
       tag={tag}
     >
@@ -68,7 +67,7 @@ const NewsSection = ({
               })
             )
             .sort(({ node: a }, { node: b }) =>
-              a.frontmatter.page_created - b.frontmatter.page_created
+              b.frontmatter.page_created - a.frontmatter.page_created
             );
           let truncated = false;
 
@@ -82,7 +81,7 @@ const NewsSection = ({
 
           return (
             <>
-              <div className="row event">
+              <div className="row news">
                 {events.map(({ node }) => {
                   const {
                     page_created
@@ -90,18 +89,18 @@ const NewsSection = ({
                   return (
                     <div
                       key={node.id}
-                      className="col-12 col-sm-6 col-md-5 col-lg-4 item"
+                      className="col-12 item"
                     >
-                      <div className="box">
-                        <div className="item-head">
+                      <div className="row box">
+                        <div className="col-12 col-sm-8">
                           <h4 className="name">{node.frontmatter.name}</h4>
-                          <p className="date">
-                            {page_created.toLocaleDateString()}
-                          </p>
-                        </div>
-                        <div className="item-body">
                           <p className="description">
                             {node.frontmatter.full_description}
+                          </p>
+                        </div>
+                        <div className="col-12 col-sm-4 text-end">
+                          <p className="date">
+                            {page_created.toLocaleDateString()}
                           </p>
                           <div className="links">
                             {node.frontmatter.links.map((link) => (

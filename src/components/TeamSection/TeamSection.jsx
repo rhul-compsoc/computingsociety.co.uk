@@ -5,15 +5,15 @@ import React, { useState } from "react";
 import Section from "../Section/Section";
 import { SiteLink } from "../SiteClickable";
 
-const TeamSection = ({ name, tag }) => {
+const TeamSection = ({ name, tag, theme }) => {
   return (
     <Section
       className="team"
       height="full"
-      theme="dark"
       id="team_section"
       name={name}
       tag={tag}
+      theme={theme}
     >
       <div className="container py-3">
         <div className="row justify-content-center">

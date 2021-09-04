@@ -16,7 +16,7 @@ const EventSection = ({
 
   return (
     <Section
-      className="Events"
+      className="events"
       height="full"
       theme={theme}
       id="events_section"

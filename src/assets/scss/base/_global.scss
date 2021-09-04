@@ -121,7 +121,7 @@ section {
       font-weight: bold;
       text-decoration: underline;
       color: $color-text-heading;
-      text-transform: lowercase;
+      // text-transform: lowercase;
 
       &.disabled {
         color: lighten($dark-gray, 40%);
@@ -134,10 +134,28 @@ section {
 //======================================
 // Events
 //======================================
-.Events {
+.media {
+  .news {
+    .description {
+      margin-bottom: 0;
+    }
+    .links {
+      display: flex;
+      justify-content: right;
+      flex-wrap: wrap;
+      gap: 0.5em;
+    }
+  }
+}
+
+.events, .media {
   .event {
     padding: 50px 0;
     min-height: 30vh;
+  }
+
+  .news {
+    padding: 50px 0;
   }
 
   .item {
@@ -191,7 +209,7 @@ section {
     .description {
       font-size: 15px;
       margin-top: 15px;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
   }
 }
