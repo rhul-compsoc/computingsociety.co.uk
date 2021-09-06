@@ -49,8 +49,8 @@ const SiteClickable = ({ to, href, onClick, children, target, type, className, .
       break;
   }
 
-  if (href) {
-    return <a {...props} href={href} target={target} role={role} className={className}>{children}</a>;
+  if (href || target) {
+    return <a {...props} href={href || to} target={target} role={role} className={className}>{children}</a>;
   }
 
   if (to) {
