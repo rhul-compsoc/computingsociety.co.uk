@@ -75,6 +75,17 @@ const EventSection = ({
                 return true;
               }
             )
+            .filter(
+              ({node}) => {
+                const {
+                  event_date_string,
+                  event_date_display,
+                  event_start,
+                  event_end,
+                } = node.frontmatter;
+                return event_end.getTime() < Date.now()
+              }
+            )
             .map((edge) =>
               Object.assign(edge, {
                 node: Object.assign(edge.node, {
