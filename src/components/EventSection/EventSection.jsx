@@ -75,6 +75,16 @@ const EventSection = ({
                 return true;
               }
             )
+            .map((edge) =>
+              Object.assign(edge, {
+                node: Object.assign(edge.node, {
+                  frontmatter: Object.assign(edge.node.frontmatter, {
+                    event_start: new Date(edge.node.frontmatter.event_start),
+                    event_end: new Date(edge.node.frontmatter.event_end),
+                  }),
+                }),
+              })
+            )
             .filter(
               ({node}) => {
                 const {
@@ -85,16 +95,6 @@ const EventSection = ({
                 } = node.frontmatter;
                 return event_end.getTime() < Date.now()
               }
-            )
-            .map((edge) =>
-              Object.assign(edge, {
-                node: Object.assign(edge.node, {
-                  frontmatter: Object.assign(edge.node.frontmatter, {
-                    event_start: new Date(edge.node.frontmatter.event_start),
-                    event_end: new Date(edge.node.frontmatter.event_end),
-                  }),
-                }),
-              })
             )
             .sort(({ node: a }, { node: b }) =>
               completed
