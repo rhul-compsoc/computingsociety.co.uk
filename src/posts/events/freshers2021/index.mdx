@@ -36,11 +36,11 @@ full_description: |
 image: ./freshers_preview.jpg
 ---
 
-import Section from "../../../components/Section";
-import EventSection from "../../../components/EventSection";
-import HeroSection from "../../../components/HeroSection";
-import { SiteLink, SiteButton } from "../../../components/SiteClickable";
-import { FreshersPictureHeroSection } from "../../../components/FreshersPictureHeroSection";
+import Section from "@components/Section";
+import EventSection from "@components/EventSection";
+import HeroSection from "@components/HeroSection";
+import { SiteLink, SiteButton } from "@components/SiteClickable";
+import { FreshersPictureHeroSection } from "@components/FreshersPictureHeroSection";
 import {
   freshers2020page,
   freshers2021tableContainerSection,
@@ -56,30 +56,31 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
 
 <div className={freshers2020page}>
 
-  <FreshersPictureHeroSection />
+{" "}
 
-  <Section
-    name="Welcome to Royal Holloway"
-    tag="Join us for three weeks of socials, talks and events overs, returner's, fresher's, and welcome week."
-    theme="orange"
-    className="text-center"
+<FreshersPictureHeroSection />
+
+{" "}
+
+<Section
+  name="Welcome to Royal Holloway"
+  tag="Join us for three weeks of socials, talks and events overs, returner's, fresher's, and welcome week."
+  theme="orange"
+  className="text-center"
+>
+  <SiteButton
+    className="btn-solid-red m-2"
+    href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
   >
-    <SiteButton
-      className="btn-solid-red m-2"
-      href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
-    >
-      get membership @ su.rhul.ac.uk
-    </SiteButton>
-    <SiteButton
-      className="btn-outline-red m-2"
-      href="/mailing"
-    >
-      Get Updates
-    </SiteButton>
-    <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
-      Join Discord
-    </SiteButton>
-  </Section>
+    get membership @ su.rhul.ac.uk
+  </SiteButton>
+  <SiteButton className="btn-outline-red m-2" href="/mailing">
+    Get Updates
+  </SiteButton>
+  <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
+    Join Discord
+  </SiteButton>
+</Section>
 
   <Section
     tag="Schedule"

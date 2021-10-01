@@ -1,19 +1,19 @@
 import React from "react";
-import EventSection from "../components/EventSection";
-import HeroSection from "../components/HeroSection";
-// import "../assets/index"
+import EventSection from "@components/EventSection";
+import HeroSection from "@components/HeroSection";
+// import "@assets/index"
 // ==============
 // COMPONENTS
 // ==============
-import Layout from "../components/Layout";
-import MembershipSection from "../components/MembershipSection";
-import SupportedBySection from "../components/SupportedBySection/SupportedBySection";
-import TeamSection from "../components/TeamSection";
-import WhatWeDoSection from "../components/WhatWeDoSection";
-import { SiteButton } from "../components/SiteClickable";
+import Layout from "@components/Layout";
+import MembershipSection from "@components/MembershipSection";
+import SupportedBySection from "@components/SupportedBySection/SupportedBySection";
+import TeamSection from "@components/TeamSection";
+import WhatWeDoSection from "@components/WhatWeDoSection";
+import { SiteButton } from "@components/SiteClickable";
 
-import { FreshersPictureHeroSection } from "../components/FreshersPictureHeroSection";
-import NewsSection from "../components/NewsSection/EventSection";
+import { FreshersPictureHeroSection } from "@components/FreshersPictureHeroSection";
+import NewsSection from "@components/NewsSection/EventSection";
 
 // ==============
 // SITE MARKUP
@@ -30,10 +30,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <HeroSection
-        name={"Royal Holloway\nComputing Society"}
-        height="full"
-      >
+      <HeroSection name={"Royal Holloway\nComputing Society"} height="full">
         <div className="btn-group pt-3">
           <SiteButton
             className="btn-solid-red m-1"
@@ -47,15 +44,16 @@ const IndexPage = () => {
           >
             E-mail Us
           </SiteButton>
-          <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
+          <SiteButton
+            className="btn-solid-discord m-1"
+            href="https://dc.cmpsc.uk/"
+          >
             Join Discord
           </SiteButton>
         </div>
       </HeroSection>
 
-      <FreshersPictureHeroSection
-        height="half"
-      >
+      <FreshersPictureHeroSection height="half">
         <SiteButton className="btn-solid-red m-1" to="/events/freshers2021">
           See Upcoming Events
         </SiteButton>
@@ -75,11 +73,7 @@ const IndexPage = () => {
         theme="light"
       ></EventSection>
 
-      <NewsSection
-        name="News"
-        tag="The latest in our society"
-        theme="dark"
-      />
+      <NewsSection name="News" tag="The latest in our society" theme="dark" />
 
       <EventSection
         name="Past Events"
@@ -88,7 +82,6 @@ const IndexPage = () => {
         truncateAt={3}
         theme="light"
       ></EventSection>
-
 
       <WhatWeDoSection
         name="What We Do"
@@ -130,4 +123,3 @@ query front {
   }
 }
 ` */
-

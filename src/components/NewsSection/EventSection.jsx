@@ -1,7 +1,7 @@
 import { graphql, StaticQuery } from "gatsby";
 import React, { useState } from "react";
 // Import Section definition
-import Section from "../Section/Section";
+import Section from "@components/Section";
 import { SiteLink } from "../SiteClickable";
 
 const NewsSection = ({
@@ -66,8 +66,9 @@ const NewsSection = ({
                 }),
               })
             )
-            .sort(({ node: a }, { node: b }) =>
-              b.frontmatter.page_created - a.frontmatter.page_created
+            .sort(
+              ({ node: a }, { node: b }) =>
+                b.frontmatter.page_created - a.frontmatter.page_created
             );
           let truncated = false;
 
@@ -83,14 +84,9 @@ const NewsSection = ({
             <>
               <div className="row news">
                 {events.map(({ node }) => {
-                  const {
-                    page_created
-                  } = node.frontmatter;
+                  const { page_created } = node.frontmatter;
                   return (
-                    <div
-                      key={node.id}
-                      className="col-12 item"
-                    >
+                    <div key={node.id} className="col-12 item">
                       <div className="row box">
                         <div className="col-12 col-sm-8">
                           <h4 className="name">{node.frontmatter.name}</h4>

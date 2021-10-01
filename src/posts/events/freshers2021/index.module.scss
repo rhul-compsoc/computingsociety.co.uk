@@ -1,7 +1,9 @@
-@import '_variables';
+@import "_variables";
 
 .freshers2020page {
-  h1, h3, h4 {
+  h1,
+  h3,
+  h4 {
     color: white;
   }
 
@@ -28,7 +30,7 @@
   background-color: $compsoc-4;
   display: flex;
   justify-content: center;
-  
+
   @media screen and (max-width: 992px) {
     width: unset;
     justify-content: left;
@@ -45,7 +47,7 @@
   font-weight: 900;
   color: white;
   background-color: $compsoc-4;
-  
+
   td {
     font-size: 1.5em;
     min-height: 1.75em;
@@ -55,7 +57,7 @@
     vertical-align: top;
     line-height: 1em;
   }
-  
+
   td:nth-child(1) {
     width: 30%;
   }
@@ -68,7 +70,6 @@
     width: 40%;
     vertical-align: middle;
   }
-
 
   .noBottom {
     border-bottom: none;
@@ -84,7 +85,6 @@
     }
   }
 
-  
   .freshers2020capturetheflag {
     max-height: 5rem;
     max-width: 100%;

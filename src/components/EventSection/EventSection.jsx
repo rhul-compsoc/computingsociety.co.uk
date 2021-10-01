@@ -1,7 +1,7 @@
 import { graphql, StaticQuery } from "gatsby";
 import React, { useState } from "react";
 // Import Section definition
-import Section from "../Section/Section";
+import Section from "@components/Section";
 import { SiteLink } from "../SiteClickable";
 
 const EventSection = ({
@@ -64,17 +64,15 @@ const EventSection = ({
             .filter(
               ({ node }) => node.frontmatter.event_completed === completed
             )
-            .filter(
-              ({ node }) => {
-                for (const eventTag of node.frontmatter.tags) {
-                  for (const ignoreTag of ignoreTags) {
-                    if (eventTag === ignoreTag) return false;
-                  }
+            .filter(({ node }) => {
+              for (const eventTag of node.frontmatter.tags) {
+                for (const ignoreTag of ignoreTags) {
+                  if (eventTag === ignoreTag) return false;
                 }
-
-                return true;
               }
-            )
+
+              return true;
+            })
             .map((edge) =>
               Object.assign(edge, {
                 node: Object.assign(edge.node, {

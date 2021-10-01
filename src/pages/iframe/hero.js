@@ -1,15 +1,11 @@
 import React from "react";
-import { SiteButton } from "../../components/SiteClickable";
+import { SiteButton } from "@components/SiteClickable";
 
 // markup
 const FreshersPage = () => {
   return (
     <div className="text-center">
-      <SiteButton
-        className="btn-solid-red m-1"
-        href="/"
-        target="_blank"
-      >
+      <SiteButton className="btn-solid-red m-1" href="/" target="_blank">
         computingsociety.co.uk
       </SiteButton>
       <SiteButton

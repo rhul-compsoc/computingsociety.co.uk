@@ -1,11 +1,13 @@
 import React from "react";
 import HeroSection from "../HeroSection/HeroSection";
-import { container, freshersHeroSection, subtitle, title } from './index.module.scss';
+import {
+  container,
+  freshersHeroSection,
+  subtitle,
+  title,
+} from "./index.module.scss";
 
-const FreshersPictureHeroSection = ({
-  height = "full",
-  children
-}) => (
+const FreshersPictureHeroSection = ({ height = "full", children }) => (
   <HeroSection
     name="RHUL CompSoc"
     height={height}
@@ -17,9 +19,6 @@ const FreshersPictureHeroSection = ({
     </div>
     {children}
   </HeroSection>
-)
+);
 
-export {
-  FreshersPictureHeroSection
-};
-
+export { FreshersPictureHeroSection };

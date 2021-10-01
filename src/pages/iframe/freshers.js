@@ -1,12 +1,16 @@
 import React from "react";
-import { FreshersPictureHeroSection } from "../../components/FreshersPictureHeroSection";
-import { SiteButton } from "../../components/SiteClickable";
+import { FreshersPictureHeroSection } from "@components/FreshersPictureHeroSection";
+import { SiteButton } from "@components/SiteClickable";
 
 // markup
 const FreshersPage = () => {
   return (
     <FreshersPictureHeroSection height="fullscreen">
-      <SiteButton className="btn-solid-red m-1" target="_blank" to="/events/freshers2021">
+      <SiteButton
+        className="btn-solid-red m-1"
+        target="_blank"
+        to="/events/freshers2021"
+      >
         See upcoming events
       </SiteButton>
     </FreshersPictureHeroSection>

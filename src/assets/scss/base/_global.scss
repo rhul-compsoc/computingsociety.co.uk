@@ -110,12 +110,14 @@ section {
 
   @media screen and (max-width: 800px) {
     .section-tag {
-      font-size: 24pt;     
+      font-size: 24pt;
     }
   }
 
   .link {
-    &, a, span {
+    &,
+    a,
+    span {
       cursor: pointer;
       display: inline-block;
       font-weight: bold;
@@ -148,7 +150,8 @@ section {
   }
 }
 
-.events, .media {
+.events,
+.media {
   .event {
     padding: 50px 0;
     min-height: 30vh;
@@ -187,7 +190,6 @@ section {
           flex-wrap: wrap;
           justify-content: right;
         }
-      
       }
     }
 

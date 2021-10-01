@@ -10,11 +10,16 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 // Import Section definition
-import Section from "../Section/Section";
+import Section from "@components/Section";
 
 const WhatWeDoSection = (props) => {
   return (
-    <Section className="WhatWeDo" height="full" id="about_section" theme={props.theme}>
+    <Section
+      className="WhatWeDo"
+      height="full"
+      id="about_section"
+      theme={props.theme}
+    >
       <h2>{props.name}</h2>
       <h3 className="section-tag">{props.tag}</h3>
 
