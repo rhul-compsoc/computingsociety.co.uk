@@ -1,6 +1,6 @@
 import React from "react";
-import "../../assets/scss/init.scss";
-import { layout } from './Layout.module.scss'
+import "@assets/scss/init.scss";
+import { layout } from "./Layout.module.scss";
 
 // Load Components
 import Footer from "../Footer";

@@ -10,8 +10,8 @@ import { graphql, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
-import logo from '../../images/logo.png';
-import favicon from '../../images/server-icon.png';
+import logo from "@images/logo.png";
+import favicon from "@images/server-icon.png";
 
 const SiteDefaultSEO = ({ lang = "en-GB" }) => {
   const { site } = useStaticQuery(

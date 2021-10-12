@@ -1,6 +1,6 @@
 import React from "react";
 // Import Section definition
-import Section from "../Section/Section";
+import Section from "@components/Section";
 import { SiteButton } from "../SiteClickable";
 
 const MembershipSection = ({ name, tag, theme = "" }) => {

@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from 'gatsby'
+import { Link } from "gatsby";
 import Nav from "react-bootstrap/Nav";
 // Load components from React-Bootstrap
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../../images/logo.svg";
+import logo from "@images/logo.svg";
 
 const Navibar = (props) => {
   return (
@@ -21,11 +21,21 @@ const Navibar = (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/#home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/#events_section">Events</Nav.Link>
-            <Nav.Link as={Link} to="/#about_section">About</Nav.Link>
-            <Nav.Link as={Link} to="/#team_section">Our Team</Nav.Link>
-            <Nav.Link as={Link} to="/#sponsors">Sponsors</Nav.Link>
+            <Nav.Link as={Link} to="/#home">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/#events_section">
+              Events
+            </Nav.Link>
+            <Nav.Link as={Link} to="/#about_section">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/#team_section">
+              Our Team
+            </Nav.Link>
+            <Nav.Link as={Link} to="/#sponsors">
+              Sponsors
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>

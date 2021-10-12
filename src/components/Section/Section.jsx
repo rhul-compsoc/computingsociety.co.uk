@@ -1,8 +1,8 @@
 import React from "react";
 
 const Section = ({
-  theme = 'light',
-  height = '',
+  theme = "light",
+  height = "",
   className,
   id = "",
   name,

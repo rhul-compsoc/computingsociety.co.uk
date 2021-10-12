@@ -22,7 +22,7 @@ const SiteSEO = ({ title, description, image }) => {
     `
   );
 
-  let newDesc = description?.replace(/\n/g, ' ')
+  let newDesc = description?.replace(/\n/g, " ");
 
   return (
     <Helmet>
@@ -34,7 +34,12 @@ const SiteSEO = ({ title, description, image }) => {
       {newDesc && <meta name="twitter:description" content={newDesc} />}
       {image && <meta property="og:image" content={image}></meta>}
       {image && <meta name="twitter:card" content="summary_large_image"></meta>}
-      {image && <meta name="twitter:image" content={site.siteMetadata.siteUrl + image}></meta>}
+      {image && (
+        <meta
+          name="twitter:image"
+          content={site.siteMetadata.siteUrl + image}
+        ></meta>
+      )}
     </Helmet>
   );
 };

@@ -1,8 +1,8 @@
 import { graphql, StaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
-import React, { useState } from "react";
+import React from "react";
 // Import Section definition
-import Section from "../Section/Section";
+import Section from "@components/Section";
 import { SiteLink } from "../SiteClickable";
 
 const TeamSection = ({ name, tag, theme }) => {
@@ -62,14 +62,22 @@ const TeamSection = ({ name, tag, theme }) => {
                     )
                     .filter((_, index) => index === 0)
                     .map(({ node }) => {
-                      const peopleWithPictures = node.frontmatter.people.filter(person => person.id.frontmatter.image)
-                      const peopleWithoutPictures = node.frontmatter.people.filter(person => !person.id.frontmatter.image)
+                      const peopleWithPictures = node.frontmatter.people.filter(
+                        (person) => person.id.frontmatter.image
+                      );
+                      const peopleWithoutPictures =
+                        node.frontmatter.people.filter(
+                          (person) => !person.id.frontmatter.image
+                        );
 
                       return (
                         <div key={node.id} className="py-4">
                           <h4>{node.frontmatter.shortname}</h4>
                           <div className="row">
-                            {[...peopleWithPictures, ...peopleWithoutPictures].map((person) => (
+                            {[
+                              ...peopleWithPictures,
+                              ...peopleWithoutPictures,
+                            ].map((person) => (
                               <div
                                 className="col-6 col-sm-4 col-md-3 py-3"
                                 key={`${node.id}-${person.id?.frontmatter.name}-${person.role}`}
@@ -112,9 +120,7 @@ const TeamSection = ({ name, tag, theme }) => {
         </div>
       </div>
 
-      <SiteLink to="/committee">
-        See previous committees
-      </SiteLink>
+      <SiteLink to="/committee">See previous committees</SiteLink>
     </Section>
   );
 };

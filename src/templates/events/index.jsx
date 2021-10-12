@@ -1,8 +1,8 @@
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
-import Layout from "../../components/Layout/Layout";
-import SiteSEO from "../../components/SiteSEO";
+import Layout from "@components/Layout/Layout";
+import SiteSEO from "@components/SiteSEO";
 
 const EventTemplate = ({ data }) => {
   const { body, frontmatter } = data.mdx;
@@ -22,7 +22,7 @@ const EventTemplate = ({ data }) => {
 export default EventTemplate;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       body
       frontmatter {
