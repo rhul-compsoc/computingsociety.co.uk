@@ -39,7 +39,7 @@ const IndexPage = () => {
             Become A Member
           </SiteButton>
           <SiteButton
-            className="btn-outline-red m-1"
+            className="btn-solid-blue m-1"
             href="mailto:hello@computingsociety.co.uk"
           >
             E-mail Us

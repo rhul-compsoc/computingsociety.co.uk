@@ -35,6 +35,23 @@
   }
 }
 
+.btn.btn-solid-blue {
+  background: $color-text-email;
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: bold;
+  padding: 1rem 3rem 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 0px;
+  box-sizing: border-box;
+  border: 5px solid $color-text-email;
+
+  &:hover {
+    background: white;
+    color: $color-text-email;
+  }
+}
+
 .btn.btn-solid-discord {
   background: $discord;
   color: #fff;
