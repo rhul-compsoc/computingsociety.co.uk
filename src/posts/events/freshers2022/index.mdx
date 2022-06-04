@@ -1,0 +1,244 @@
+---
+name: CompSoc Fresher's 2022
+shortname: Fresher's 2022
+subtitle: null
+show: true
+render: true
+
+page_created: null
+page_updated: null
+
+# event_date_display: [start, end, both, string]
+event_completed: true
+event_start: 2022-09-13T00:00:00+00:00
+event_end: 2022-10-02T20:00:00+00:00
+event_date_string: null
+event_date_display: both
+
+# Pass an array of { label, href }
+links: []
+
+# A list of pages that redirect to this page
+# NOT FOR PAGES THAT DO NOT RENDER (render: false)
+redirects:
+  - /freshers
+  - /freshers2022
+
+# A list of tags
+tags:
+  - freshers2022
+
+# A long description for the event.
+full_description: |
+  CompSoc's full range of events for freshers of Royal Holloway, University of London.
+  Hackathons, CTFs, Pizza and more.
+
+image: ./freshers_preview.jpg
+---
+
+import Section from "@components/Section";
+import EventSection from "@components/EventSection";
+import HeroSection from "@components/HeroSection";
+import { SiteLink, SiteButton } from "@components/SiteClickable";
+import { FreshersPictureHeroSection } from "@components/FreshersPictureHeroSection";
+import {
+  freshers2020page,
+  freshers2021tableContainerSection,
+  freshers2021table,
+  freshers2020freshershacklogo,
+  freshers2020freshershacklogolink,
+  freshers2020capturetheflag,
+  noBottom,
+  freshers2021tableContainer,
+} from "./index.module.scss";
+import logo_var_orange from "./logo_var2.svg";
+import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
+
+<div className={freshers2020page}>
+
+{" "}
+
+<FreshersPictureHeroSection />
+
+{" "}
+
+<Section
+  name="Welcome to Royal Holloway"
+  tag="Join us for three weeks of socials, talks and events overs, returner's, fresher's, and welcome week."
+  theme="orange"
+  className="text-center"
+>
+  <SiteButton
+    className="btn-solid-red m-2"
+    href="https://www.su.rhul.ac.uk/societies/a-z/computing/"
+  >
+    get membership @ su.rhul.ac.uk
+  </SiteButton>
+  <SiteButton className="btn-outline-red m-2" href="/mailing">
+    Get Updates
+  </SiteButton>
+  <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
+    Join Discord
+  </SiteButton>
+</Section>
+
+  <Section
+    tag="Schedule"
+    theme="orange"
+    className={freshers2021tableContainerSection}
+  >
+    <h4>Unless specified, we are in the <i>Bedford Building</i>!</h4>
+    <h2>Week Zero - 13-19 September</h2>
+    <div className={freshers2021tableContainer}> 
+      <table className={freshers2021table}>
+        <tbody>
+          <tr>
+            <td>Wednesday 15<sup>th</sup></td>
+            <td>4pm - 10pm</td>
+            <td>
+              Returner's Social
+            </td>
+          </tr>
+          <tr>
+            <td>Friday 17<sup>th</sup></td>
+            <td>8pm - 11pm</td>
+            <td>
+              Returner's Pub Crawl<br />
+              <small>starting @ Packhorse Pub</small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Week One - 20-26 September</h2>
+    <div className={freshers2021tableContainer}> 
+      <table className={freshers2021table}>
+        <tbody>
+          <tr>
+            <td>Monday 20<sup>th</sup></td>
+            <td>12pm - 5pm</td>
+            <td rowspan="2">
+              Fresher's Fair<br />
+              <small>@ Sports Hall</small>
+            </td>
+          </tr>
+          <tr>
+            <td>Tuesday 21<sup>st</sup></td>
+            <td>12am - 5pm</td>
+          </tr>
+          <tr>
+            <td>Wednesday 22<sup>nd</sup></td>
+            <td>3pm</td>
+            <td>
+              Welcome to CompSoc
+            </td>
+          </tr>
+          <tr>
+            <td>Thursday 23<sup>rd</sup></td>
+            <td>7pm - Midnight</td>
+            <td>
+              Pub Crawl<br />
+              <small>Location to be announced on Discord</small>
+            </td>
+          </tr>
+          <tr>
+            <td>Friday 24<sup>th</sup></td>
+            <td>6pm - 8pm</td>
+            <td>
+              Film Night
+            </td>
+          </tr>
+          <tr>
+            <td>Saturday 25<sup>th</sup></td>
+            <td>
+              10am - Midnight
+            </td>
+            <td rowspan="2">
+              <SiteLink className={freshers2020freshershacklogolink} href="https://royalhackaway.com/events/freshers2021">
+                <img
+                  src={logo_var_orange}
+                  className={freshers2020freshershacklogo}
+                  alt="Fresher's Hack 2021"
+                  title="Fresher's Hack 2021"
+                />
+              </SiteLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Sunday 26<sup>th</sup></td>
+            <td>
+              10am - 9pm
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Week Two - 27 September - 03 October</h2>
+    <div className={freshers2021tableContainer}> 
+      <table className={freshers2021table}>
+        <tbody>
+          <tr>
+            <td>Monday 27<sup>th</sup></td>
+            <td>7pm - 11pm</td>
+            <td>
+              Pub Crawl AF<br />
+              <small>Location to be announced on Discord</small>
+            </td>
+          </tr>
+          <tr>
+            <td>Tuesday 28<sup>th</sup></td>
+            <td>5pm - 11pm</td>
+            <td>
+              Games Night
+            </td>
+          </tr>
+          <tr>
+            <td>Wednesday 29<sup>th</sup></td>
+            <td>3pm - 5pm</td>
+            <td>
+              CompSoc AGM/Hustings
+            </td>
+          </tr>
+          <tr>
+            <td>Thursday 30<sup>th</sup></td>
+            <td>7pm - 11pm</td>
+            <td>
+              Pub Social<br />
+              <small>@ Packhorse Pub</small>
+            </td>
+          </tr>
+          <tr>
+            <td>Friday 1<sup>st</sup></td>
+            <td>6pm - 8pm</td>
+            <td>
+              Film Night
+            </td>
+          </tr>
+          <tr>
+            <td>Saturday 2<sup>nd</sup></td>
+            <td>10am - 11pm</td>
+            <td>
+              <img
+                src={logo_ctf}
+                className={freshers2020capturetheflag}
+                alt="Royal Holloway Computing Society Capture The Flag"
+                title="Royal Holloway Computing Society Capture The Flag"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Section>
+</div>
+
+<EventSection
+  name="More Events"
+  tag="Our events don't just end here - Here's some more events throughout the year"
+  completed={false}
+  ignoreTags={["freshers2021"]}
+></EventSection>
+
+<!-- ![](./eieipadry.png) -->
+
+<!-- None of this will be rendered until you turn on "render: true" -->
