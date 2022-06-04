@@ -53,13 +53,13 @@ const IndexPage = () => {
         </div>
       </HeroSection>
 
-      { <FreshersPictureHeroSection
+      { /*<FreshersPictureHeroSection
         height="half"
       >
         <SiteButton className="btn-solid-red m-1" to="/events/freshers2022">
           See Upcoming Events
         </SiteButton>
-      </FreshersPictureHeroSection> }
+  </FreshersPictureHeroSection> */}
 
       <MembershipSection
         name="Membership"
