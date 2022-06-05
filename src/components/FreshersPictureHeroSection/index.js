@@ -15,7 +15,7 @@ const FreshersPictureHeroSection = ({ height = "full", children }) => (
   >
     <div className={container}>
       <h1 className={title}>Fresher's</h1>
-      <h2 className={subtitle}>Welcome Week 2021</h2>
+      <h2 className={subtitle}>Welcome Week 2022</h2>
     </div>
     {children}
   </HeroSection>

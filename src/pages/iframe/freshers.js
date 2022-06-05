@@ -9,7 +9,7 @@ const FreshersPage = () => {
       <SiteButton
         className="btn-solid-red m-1"
         target="_blank"
-        to="/events/freshers2021"
+        to="/events/freshers2022"
       >
         See upcoming events
       </SiteButton>
