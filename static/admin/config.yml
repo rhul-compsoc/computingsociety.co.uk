@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: rhul-compsoc/computingsociety.co.uk
+  branch: master
+
+media_folder: static/media
+public_folder: /media
+
+collections:
+  - name: committee
+    label: Committee Members
+    label_singular: Member
+    folder: src/posts/people
+    create: true
+    extension: mdx
+    format: frontmatter
+    nested:
+      depth: 2
+    fields:
+      - label: name
+        name: Name
+        widget: string
+      # - label: image
+      #   name: Image
+      #   widget: image
