@@ -13,7 +13,7 @@ event_completed: false
 event_start: 2022-09-13T00:00:00+00:00
 event_end: 2022-10-02T20:00:00+00:00
 event_date_string: null
-event_date_display: both
+event_date_display: bothgit pull
 
 # Pass an array of { label, href }
 links: []
@@ -43,7 +43,6 @@ import { SiteLink, SiteButton } from "@components/SiteClickable";
 import { FreshersPictureHeroSection } from "@components/FreshersPictureHeroSection";
 import {
   freshers2020page,
-  freshers2021tableContainerSection,
   freshers2021table,
   freshers2020freshershacklogo,
   freshers2020freshershacklogolink,
@@ -56,9 +55,7 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
 
 <div className={freshers2020page}>
 
-
 <FreshersPictureHeroSection />
-
 
 <Section
   name="Welcome to Royal Holloway"
@@ -83,7 +80,6 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
   <Section
     tag="Schedule"
     theme="orange"
-    className={freshers2021tableContainerSection}
   >
     <h4>Unless specified, we are in the <i>Bedford Building</i>!</h4>
     <h2>Week Zero - 12-18 September</h2>
@@ -91,15 +87,15 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
       <table className={freshers2021table}>
         <tbody>
           <tr>
-            <td>Thrusday 15<sup>th</sup></td>
-            <td>4pm - 10pm</td>
+            <td>Friday 16<sup>th</sup></td>
+            <td>4pm - 6pm</td>
             <td>
               Returner's Social
             </td>
           </tr>
           <tr>
             <td>Friday 16<sup>th</sup></td>
-            <td>8pm - 11pm</td>
+            <td>6pm - 11pm</td>
             <td>
               Returner's Pub Crawl<br />
               <small>starting @ Packhorse Pub</small>
@@ -121,30 +117,14 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
             </td>
           </tr>
           <tr>
-            <td>Tuesday 20<sup>st</sup></td>
+            <td>Tuesday 20<sup>th</sup></td>
             <td>12am - 5pm</td>
           </tr>
           <tr>
-            <td>Wednesday 21<sup>nd</sup></td>
-            <td>3pm</td>
+            <td>Thursday 22<sup>nd</sup></td>
+            <td>3pm - 8pm</td>
             <td>
-              Welcome to CompSoc Freshers Piaza & Games Social
-            </td>
-          </tr>
-          <tr>
-            <td>Thursday 22<sup>rd</sup></td>
-            <td>7pm - Midnight</td>
-            <td>
-              Pub Crawl<br />
-              <small>starting @ Packhourse Pub</small>
-            </td>
-          </tr>
-          <tr>
-            <td>Friday 23<sup>th</sup></td>
-            <td>6pm - 8pm</td>
-            <td>
-              Film Night<br />
-              <small>@ Windsor Auditorium</small>
+              Welcome to CompSoc Freshers Pizza &amp; LAN Party
             </td>
           </tr>
           <tr>
@@ -166,7 +146,7 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
           <tr>
             <td>Sunday 25<sup>th</sup></td>
             <td>
-              10am - 9pm
+              Midnight - 10am
             </td>
           </tr>
         </tbody>
@@ -177,51 +157,18 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
       <table className={freshers2021table}>
         <tbody>
           <tr>
-            <td>Monday 26<sup>th</sup></td>
-            <td>6pm - 10pm</td>
-            <td>
-              Games Night<br />
-            </td>
-          </tr>
-          <tr>
             <td>Tuesday 27<sup>th</sup></td>
             <td>7pm - 11pm</td>
             <td>
-              Pub Social<br />
-              <small>@ Packhourse Pub</small>
-            </td>
-          </tr>
-          <tr>
-            <td>Wednesday 28<sup>th</sup></td>
-            <td>3pm - 5pm</td>
-            <td>
-              CompSoc AGM/Hustings
+              Film Night<br />
+                <small>@ Windsor Auditorium</small>
             </td>
           </tr>
           <tr>
             <td>Thursday 29<sup>th</sup></td>
-            <td>7pm - 11pm</td>
+            <td>3pm - 5pm</td>
             <td>
-              Games Night<br />
-            </td>
-          </tr>
-          <tr>
-            <td>Friday 30<sup>st</sup></td>
-            <td>6pm - 8pm</td>
-            <td>
-              TBA
-            </td>
-          </tr>
-          <tr>
-            <td>Saturday 1<sup>nd</sup></td>
-            <td>10am - 11pm</td>
-            <td>
-              <img
-                src={logo_ctf}
-                className={freshers2020capturetheflag}
-                alt="Royal Holloway Computing Society Capture The Flag"
-                title="Royal Holloway Computing Society Capture The Flag"
-              />
+              CompSoc AGM/Hustings
             </td>
           </tr>
         </tbody>
@@ -238,5 +185,3 @@ import logo_ctf from "./rhcs_ctf_general_branding_logo.svg";
 ></EventSection>
 
 <!-- ![](./eieipadry.png) -->
-
-<!-- None of this will be rendered until you turn on "render: true" -->
