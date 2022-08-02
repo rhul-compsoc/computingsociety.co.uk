@@ -6,16 +6,19 @@
 
 ![Full Page Screenshot](.github/fullpage.png)
 
+## Getting started
+
+1. Install pnpm on your system with `npm install -g pnpm`
+2. Install the dependencies inside the project folder using `pnpm install`
+3. Launch the development server using `pnpm run dev`
+
 ## Contributing
 
 - Please check Notion, open issues and PRs before working on anything or opening a new one!
-- Please ensure you have run `yarn format` before pushing new code.
 
 ### Testing
 
-Testing is using `jest` which is the go-to testing suite along with the react testing library for for react utilities.
-
-https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/
+TODO: Add testing instructions
 
 #### Testing methodolgy
 
