@@ -15,7 +15,7 @@ module.exports = {
 	trailingComma: 'none',
 	printWidth: 100,
 	htmlWhitespaceSensitivity: 'strict',
-	parsers: {
+	parser: {
 		typescript: {
 			...tailwindPlugin.parsers.typescript,
 			preprocess: sortImportsPlugin.parsers.typescript.preprocess
