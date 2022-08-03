@@ -1,6 +1,6 @@
 # RHUL CompSoc
 
-- [Website](https://computingsociety.co.uk/)
+-   [Website](https://computingsociety.co.uk/)
 
 ## Images
 
@@ -14,7 +14,7 @@
 
 ## Contributing
 
-- Please check Notion, open issues and PRs before working on anything or opening a new one!
+-   Please check Notion, open issues and PRs before working on anything or opening a new one!
 
 ### Testing
 
