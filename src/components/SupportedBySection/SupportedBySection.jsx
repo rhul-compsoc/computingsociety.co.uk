@@ -15,7 +15,10 @@ const SupportedBySection = ({ name, tag, theme }) => {
       theme={theme}
     >
       <p className={styles.details}>Interested in supporting us?</p>
-      <SiteButton className="btn btn-solid-red" href="https://cmpsc.uk/sponsor">
+      <SiteButton
+        className="btn btn-solid-red"
+        href="https://compsoc.dev/sponsor"
+      >
         Find Out More
       </SiteButton>
     </Section>
