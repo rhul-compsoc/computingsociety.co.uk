@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poiret+One&family=Press+Start+2P&family=Righteous&family=Silkscreen&family=Zen+Dots&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body {
+	margin: 0;
+
+	font-family: 'Poiret One', cursive;
+
+	font-family: 'Zen Dots', cursive;
+	font-family: 'Press Start 2P', cursive;
+
+}
