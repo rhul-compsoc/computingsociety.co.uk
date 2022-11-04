@@ -12,7 +12,7 @@ import TeamSection from "@components/TeamSection";
 import WhatWeDoSection from "@components/WhatWeDoSection";
 import { SiteButton } from "@components/SiteClickable";
 
-import { HackawaySection } from "@components/HackawaySection";
+import HackawaySection from "@components/HackawaySection";
 
 // ==============
 // SITE MARKUP
