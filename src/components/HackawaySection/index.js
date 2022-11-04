@@ -4,7 +4,6 @@ import {
   container,
   hackawayHeroSection,
   subtitle,
-  title,
 } from "./index.module.scss";
 import HackawayLogo from "./hackaway-logo.png";
 
