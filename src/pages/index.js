@@ -12,7 +12,7 @@ import TeamSection from "@components/TeamSection";
 import WhatWeDoSection from "@components/WhatWeDoSection";
 import { SiteButton } from "@components/SiteClickable";
 
-import { HackawayPictureHeroSection } from "../components/HackawaySection";
+import { HackawaySection } from "@components/HackawaySection";
 
 // ==============
 // SITE MARKUP
@@ -52,13 +52,11 @@ const IndexPage = () => {
         </div>
       </HeroSection>
 
-      { <HackawayPictureHeroSection
-        height="half"
-      >
+      <HackawaySection height="half">
         <SiteButton className="btn-solid-red m-1" to="https://royalhackaway.co.uk/">
           Find out more
         </SiteButton>
-  </HackawayPictureHeroSection> }
+      </HackawaySection>
 
       <MembershipSection
         name="Membership"
