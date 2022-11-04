@@ -12,8 +12,7 @@ import TeamSection from "@components/TeamSection";
 import WhatWeDoSection from "@components/WhatWeDoSection";
 import { SiteButton } from "@components/SiteClickable";
 
-import { FreshersPictureHeroSection } from "@components/FreshersPictureHeroSection";
-import NewsSection from "@components/NewsSection/EventSection";
+import HackawaySection from "@components/HackawaySection";
 
 // ==============
 // SITE MARKUP
@@ -53,13 +52,11 @@ const IndexPage = () => {
         </div>
       </HeroSection>
 
-      { <FreshersPictureHeroSection
-        height="half"
-      >
-        <SiteButton className="btn-solid-red m-1" to="/events/freshers2022">
-          See Upcoming Events
+      <HackawaySection height="half">
+        <SiteButton className="btn-solid-red m-1" to="https://royalhackaway.co.uk/">
+          Find out more
         </SiteButton>
-  </FreshersPictureHeroSection> }
+      </HackawaySection>
 
       <MembershipSection
         name="Membership"
@@ -74,8 +71,6 @@ const IndexPage = () => {
         truncateAt={6}
         theme="light"
       ></EventSection>
-
-      <NewsSection name="News" tag="The latest in our society" theme="dark" />
 
       <EventSection
         name="Past Events"
