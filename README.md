@@ -1,24 +1,45 @@
-# RHUL CompSoc
+# Astro Starter Kit: Minimal
 
-- [Website](https://computingsociety.co.uk/)
+```
+npm create astro@latest -- --template minimal
+```
 
-## Images
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
 
-![Full Page Screenshot](.github/fullpage.png)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Contributing
+## 🚀 Project Structure
 
-- Please check Notion, open issues and PRs before working on anything or opening a new one!
-- Please ensure you have run `yarn format` before pushing new code.
+Inside of your Astro project, you'll see the following folders and files:
 
-### Testing
+```
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-Testing is using `jest` which is the go-to testing suite along with the react testing library for for react utilities.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-#### Testing methodolgy
+Any static assets, like images, can be placed in the `public/` directory.
 
-Due to the site being a static site generator, we are not doing really any functional testing. We are instead doing primarily snapshot testing.
+## 🧞 Commands
 
-That is testing if the current output matches what it did in the past, this is to ensure any changes we make doesn't break anything in the future.
+All commands are run from the root of the project, from a terminal:
+
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:3000`      |
+| `npm run build`        | Build your production site to `./dist/`          |
+| `npm run preview`      | Preview your build locally, before deploying     |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
