@@ -1,4 +1,5 @@
 ---
+import BottomBar from 'components/bottom-bar.svelte';
 ---
 
 <html lang="en">
@@ -7,8 +8,10 @@
 		<title>My Cool Astro Site</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
-	<body class="min-h-screen bg-slate-900">
+	<body class="min-h-screen bg-slate-900 flex flex-col">
 		<slot />
+
+		<BottomBar />
 		<style>
 			html,
 			body {
@@ -21,3 +24,22 @@
 		</style>
 	</body>
 </html>
+<style>
+	body {
+		background-image: linear-gradient(
+			109deg,
+			#a52d31 16.67%,
+			#b12f34 16.67%,
+			#b12f34 33.33%,
+			#bb3035 33.33%,
+			#bb3035 50%,
+			#a52d31 50%,
+			#a52d31 66.67%,
+			#b12f34 66.67%,
+			#b12f34 83.33%,
+			#bb3035 83.33%,
+			#bb3035 100%
+		);
+		background-size: 190.37px 552.88px;
+	}
+</style>

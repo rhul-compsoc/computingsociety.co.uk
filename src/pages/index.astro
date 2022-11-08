@@ -7,39 +7,15 @@ const contentfulClient = contentful.createClient({
 	accessToken: import.meta.env.SECRET_CONTENTFUL_CONTENT_DELIVERY_AK
 });
 
-const col1 = '#a52d31';
-const col2 = '';
-const col3 = '';
-
 const entry = await contentfulClient.getEntry('2rjIuJgg6cud0k79idjN8u').catch((r) => {
 	console.log(r);
 });
+
 console.log(entry?.fields);
 ---
 
 <MainLayout>
-	<div class="w-full h-screen grid place-items-center">
-		<h1 class="font-bold text-center text-5xl underline p-2
-		text-white">astro :)</h1>
+	<div class="w-full h-full grid place-items-center flex-1">
+		<h1 class="font-bold text-center text-5xl underline p-2 text-white">astro :)</h1>
 	</div>
 </MainLayout>
-
-<style>
-	body {
-		background-image: linear-gradient(
-			109deg,
-			#a52d31 16.67%,
-			#b12f34 16.67%,
-			#b12f34 33.33%,
-			#bb3035 33.33%,
-			#bb3035 50%,
-			#a52d31 50%,
-			#a52d31 66.67%,
-			#b12f34 66.67%,
-			#b12f34 83.33%,
-			#bb3035 83.33%,
-			#bb3035 100%
-		);
-		background-size: 190.37px 552.88px;
-	}
-</style>
