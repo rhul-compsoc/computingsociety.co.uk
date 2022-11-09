@@ -1,17 +1,17 @@
 ---
-import contentful from 'contentful';
+// import contentful from 'contentful';
 import MainLayout from 'layouts/mainLayout.astro';
 
-const contentfulClient = contentful.createClient({
-	space: import.meta.env.SECRET_CONTENTFUL_SPACE_ID,
-	accessToken: import.meta.env.SECRET_CONTENTFUL_CONTENT_DELIVERY_AK
-});
+// const contentfulClient = contentful.createClient({
+// 	space: import.meta.env.SECRET_CONTENTFUL_SPACE_ID,
+// 	accessToken: import.meta.env.SECRET_CONTENTFUL_CONTENT_DELIVERY_AK
+// });
 
-const entry = await contentfulClient.getEntry('2rjIuJgg6cud0k79idjN8u').catch((r) => {
-	console.log(r);
-});
+// const entry = await contentfulClient.getEntry('2rjIuJgg6cud0k79idjN8u').catch((r) => {
+// 	console.log(r);
+// });
 
-console.log(entry?.fields);
+// console.log(entry?.fields);
 ---
 
 <MainLayout>

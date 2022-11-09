@@ -32,5 +32,11 @@ module.exports = {
 	htmlWhitespaceSensitivity: 'strict',
 	// import sort config
 	importOrder: ['<THIRD_PARTY_MODULES>', '^[./]', '^[../]'],
-	importOrderSeparation: true
+	importOrderSeparation: true,
+	overrides: [
+		{
+			files: '**/*.svelte',
+			options: { parser: 'svelte' }
+		}
+	]
 };
