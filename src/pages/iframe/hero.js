@@ -14,7 +14,7 @@ const FreshersPage = () => {
       >
         E-mail Us
       </SiteButton>
-      <SiteButton className="btn-solid-discord m-1" href="https://dc.cmpsc.uk/">
+      <SiteButton className="btn-solid-discord m-1" href="/dc">
         Join Discord
       </SiteButton>
     </div>
