@@ -45,7 +45,7 @@ const IndexPage = () => {
           </SiteButton>
           <SiteButton
             className="btn-solid-discord m-1"
-            href="https://computingsociety.co.uk/dc"
+            href="/dc"
           >
             Join Discord
           </SiteButton>
