@@ -14,8 +14,8 @@ const HackawaySection = ({ height = "full", children }) => (
     className={hackawayHeroSection}
   >
     <div className={container}>
-      <img src={HackawayLogo} alt="Royal Hackaway V6" />
-      <h2 className={subtitle}>4th - 5th February 2023</h2>
+      <img src={HackawayLogo} alt="Royal Hackaway V7" />
+      <h2 className={subtitle}>27th - 28th January 2024</h2>
     </div>
     {children}
   </HeroSection>
