@@ -1,3 +1,57 @@
+<script>
+  import Header from "./components/Header.svelte";
+  import "./App.css";
+</script>
+
 <main>
-    <h1>CompSoc lol</h1>
+  <Header />
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
+  <p>oi</p>
 </main>
