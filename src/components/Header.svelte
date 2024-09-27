@@ -1,5 +1,5 @@
 <script>
-  import css from "./Header.module.css";
+  import css from "../styles/Header.module.css";
   import { onMount } from "svelte";
 
   let scrollTop = 0;
@@ -24,15 +24,17 @@
 >
   <div class={css.content}>
     <div class={css.topBar}>
-      <div class={css.logo}>
-        <img src="/compsoc-logo.png" alt="CompSoc Logo, back to top" />
-      </div>
+      <a href="#top">
+        <div class={css.logo}>
+          <img src="/compsoc-logo.png" alt="CompSoc Logo, back to top" />
+        </div>
+      </a>
       <div class={css.links}>
-        <a>Home</a>
-        <a>Events</a>
-        <a>About</a>
-        <a>Our Team</a>
-        <a>Sponsors</a>
+        <a href="#top">Home</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#our-team">Our Team</a>
+        <a href="#sponsors">Sponsors</a>
       </div>
       <img
         src="/compsoc-logo.png"

@@ -1,10 +1,12 @@
 <script>
+  import Footer from "./components/Footer.svelte";
   import Header from "./components/Header.svelte";
-  import "./App.css";
+  import "./styles/App.css";
 </script>
 
+<Header />
 <main>
-  <Header />
+  <h1>hi</h1>
   <p>oi</p>
   <p>oi</p>
   <p>oi</p>
@@ -55,3 +57,4 @@
   <p>oi</p>
   <p>oi</p>
 </main>
+<Footer />
