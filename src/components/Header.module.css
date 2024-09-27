@@ -1,48 +1,77 @@
-:root {
-  --header-height: 15vh;
-}
-
 .header {
+  position: relative;
   width: 100%;
-  height: var(--header-height);
-  margin: 0px;
   background-color: #c32126;
   color: #fff;
   border-radius: 0px 0px 75px 75px;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
-  position: fixed;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  transition: height 0.3s, box-shadow 0.3s;
 }
 
-.navbar {
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header img {
+  width: 800px;
+  position: absolute;
+  top: 25vh;
+  left: calc(50vw - 400px);
+  transition: opacity 0.2s ease;
+}
+
+.sticky {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.topBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 25vw;
+  width: 100%;
 }
-
-.header > * {
+.topBar .logo {
   position: relative;
-  z-index: 5;
+  margin-left: 10vw;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  width: 30%;
 }
 
-.topCard {
-  position: relative;
-  border-radius: 0px 0px 75px 75px;
-  z-index: 1;
-  width: inherit;
-  background-color: #c32126;
-  height: 60vh;
-}
-
-.topCard > img {
-  --w: 800px;
-  width: var(--w);
+.topBar .logo > img {
   position: absolute;
-  left: calc((100vw - var(--w)) / 2);
-  top: 20vh;
+  top: 3vh;
+  left: 0px;
+  width: 10vw;
+}
+
+.sticky .topBar .logo {
+  opacity: 1;
+}
+
+.topBar .links {
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 5vh;
+  width: 40%;
+  height: 100%;
+  font-size: 1rem;
+}
+.topBar .links > a:not(:last-child) {
+  margin-right: 3vw;
 }
