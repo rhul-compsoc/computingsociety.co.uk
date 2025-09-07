@@ -1,0 +1,15 @@
+{
+  "name": "a",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^7.1.0",
+    "astro": "^5.13.5"
+  }
+}
