@@ -1,9 +1,13 @@
 {
-  "name": "computing-society",
+  "name": "computing-society.co.uk",
   "version": "1.0.0",
   "private": true,
-  "description": "Computing Society",
-  "author": "Joshua Sawyer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhul-compsoc/computingsociety.co.uk.git"
+  },
+  "description": "RHUL Computing Society website",
+  "author": "Computing Society",
   "keywords": [
     "gatsby"
   ],
